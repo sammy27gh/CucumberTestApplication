@@ -20,14 +20,6 @@ public class SearchResultsPage {
 		//search for the page search text from the search results page 
 		
 
-     public void  getText(){
-    	
-    	boolean textValue =   driver.getPageSource().contains("Becker");
-		
-    	 
-	
-    	 
-    	 
-     }
+
 		
 }

@@ -47,9 +47,10 @@ public class LoginPageTest {
 		LoginPage bingSearch = new LoginPage(driver);
 		bingSearch.searchBing("Books");
 	     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-		SearchResultsPage searchR  =  new SearchResultsPage(driver);
-		;
+		//SearchResultsPage searchR  =  new SearchResultsPage(driver);
+		
 	   Assert.assertTrue(driver.getPageSource().contains("Becker"));
+	   
 		}
 	
 
