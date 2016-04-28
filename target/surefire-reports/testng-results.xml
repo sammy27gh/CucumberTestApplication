@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="pageFactoryTest.LoginPageTest" duration-ms="9021" started-at="2016-04-28T07:34:02Z" finished-at="2016-04-28T07:34:11Z">
+  <suite name="pageFactoryTest.LoginPageTest" duration-ms="11120" started-at="2016-04-28T08:08:52Z" finished-at="2016-04-28T08:09:03Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="9021" started-at="2016-04-28T07:34:02Z" finished-at="2016-04-28T07:34:11Z">
+    <test name="Command line test" duration-ms="11120" started-at="2016-04-28T08:08:52Z" finished-at="2016-04-28T08:09:03Z">
       <class name="pageFactoryTest.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.LoginPageTest@14eebce6]" name="setup" is-config="true" duration-ms="6895" started-at="2016-04-28T02:34:02Z" finished-at="2016-04-28T02:34:09Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.LoginPageTest@468634b6]" name="setup" is-config="true" duration-ms="8449" started-at="2016-04-28T03:08:52Z" finished-at="2016-04-28T03:09:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="bingSearchTest()[pri:0, instance:pageFactoryTest.LoginPageTest@14eebce6]" name="bingSearchTest" duration-ms="2111" started-at="2016-04-28T02:34:09Z" finished-at="2016-04-28T02:34:11Z">
+        <test-method status="PASS" signature="bingSearchTest()[pri:0, instance:pageFactoryTest.LoginPageTest@468634b6]" name="bingSearchTest" duration-ms="2654" started-at="2016-04-28T03:09:01Z" finished-at="2016-04-28T03:09:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bingSearchTest -->
