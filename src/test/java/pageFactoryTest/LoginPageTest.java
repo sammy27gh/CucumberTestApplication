@@ -9,14 +9,14 @@ package pageFactoryTest;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pageFactory.LoginPage;
-import pageFactory.SearchResultsPage;
 
 public class LoginPageTest {
 	 
@@ -47,8 +47,7 @@ public class LoginPageTest {
 		LoginPage bingSearch = new LoginPage(driver);
 		bingSearch.searchBing("Books");
 	     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-		//SearchResultsPage searchR  =  new SearchResultsPage(driver);
-		
+	
 	   Assert.assertTrue(driver.getPageSource().contains("Becker"));
 	   
 		}
