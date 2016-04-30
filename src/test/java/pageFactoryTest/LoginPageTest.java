@@ -78,7 +78,7 @@ public class LoginPageTest {
 	     boolean test = driver.getPageSource().contains("Online shopping");
 		
 		Assert.assertEquals(test, true);
-	  
+	     
 	     driver.close();
 	     
 	     Thread.sleep(2000);
