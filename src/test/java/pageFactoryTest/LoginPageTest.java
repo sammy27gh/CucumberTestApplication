@@ -42,7 +42,7 @@ public class LoginPageTest {
 		LoginPage bingSearch = new LoginPage(driver);
 		bingSearch.searchBing("Books");
 	     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-	     boolean test = driver.getPageSource().contains("Online shopping");
+	     boolean test = driver.getPageSource().contains("My 10 Favorite Books: Alan Cumming");
 		
 		Assert.assertEquals(test, true);
 	  
@@ -58,7 +58,7 @@ public class LoginPageTest {
 		LoginPage bingSearch = new LoginPage(driver);
 		bingSearch.searchBing("Books");
 	     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-	     boolean test = driver.getPageSource().contains("Online shopping");
+	     boolean test = driver.getPageSource().contains("Books-A-Million - Official Site");
 		
 		Assert.assertEquals(test, true);
 	  
@@ -83,7 +83,37 @@ public class LoginPageTest {
 	     
 	     Thread.sleep(2000);
 		}
+		@Test
+		public void bingSearchTest3() throws InterruptedException{
+	     // invoke the beforeTest method over here 
+			setup();
+			
+		LoginPage bingSearch = new LoginPage(driver);
+		bingSearch.searchBing("Books");
+	     //String searchFind = "driver.getPageSource().contains(Becker Books)";
+		System.out.println(" verifying the test contains online shopping 3 ");
+	     boolean test = driver.getPageSource().contains("100,000 booksellers.");
 		
+		Assert.assertEquals(test, true);
+	     
+	     driver.close();
+	     
+	     Thread.sleep(2000);
+		}
+		
+		public void NewsTest() throws InterruptedException{
+			
+			setup();
+			
+			LoginPage newsTest = new LoginPage(driver);
+			newsTest.News();
+			
+			boolean News = driver.getPageSource().contains("My 10 Favorite Books: Alan Cumming");
+			Assert.assertEquals(News, true);
+			driver.close();
+			
+			Thread.sleep(2000);
+		}
 		
 
 }
