@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -33,25 +34,38 @@ public class LoginPageTest {
 	  driver.get("http://www.bing.com/");
 
 	    }
+
 	
-	// this test checks for the login functionality
-	 /*   public void loginTest(){
-		
-	    LoginPage objLogin = new LoginPage(driver);
-		
-		objLogin.login("healthyandwellnessproducts@gmail.com", "healthyandwellnessproducts123");
-	
-	}*/
+
 		@Test
-		public void bingSearchTest(){
+		public void bingSearchTest() throws InterruptedException{
 		LoginPage bingSearch = new LoginPage(driver);
 		bingSearch.searchBing("Books");
 	     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-	
-		Assert.assertTrue(driver.getPageSource().contains("Online shopping"));
+	     boolean test = driver.getPageSource().contains("Online shopping");
+		
+		Assert.assertEquals(test, true);
 	  
-	   
+	     driver.close();
+	     
+	     Thread.sleep(2000);
 		}
-	
+		
+		@Test
+		public void bingSearchTest1() throws InterruptedException{
+			setup();
+		LoginPage bingSearch = new LoginPage(driver);
+		bingSearch.searchBing("Books");
+	     //String searchFind = "driver.getPageSource().contains(Becker Books)";
+	     boolean test = driver.getPageSource().contains("Online shopping");
+		
+		Assert.assertEquals(test, true);
+	  
+	     driver.close();
+	     
+	     Thread.sleep(2000);
+		}
+		
+		
 
 }

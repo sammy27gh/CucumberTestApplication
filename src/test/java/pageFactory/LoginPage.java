@@ -60,6 +60,20 @@ public class LoginPage {
         	 
         	 clickSearch.click();
         	 
+        	 
+         }
+         
+         // Find the the news link on top of the page 
+         @FindBy(how =  How.ID, using = "scpl3")
+         WebElement News;
+         
+         // click on the News  link
+         
+         
+         public void News(){
+        	
+        	News.click();
+        	 
          }
          
          
