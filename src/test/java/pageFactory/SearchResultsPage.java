@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SearchResultsPage {
 
-	WebDriver driver;
-	 String textValue;
-	
+		WebDriver driver;
+		 String textValue;
+		
 	// constructor for the class
 		public SearchResultsPage(WebDriver driver){
 			this.driver = driver;

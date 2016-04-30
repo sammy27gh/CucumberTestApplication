@@ -7,6 +7,11 @@
  */
 package pageFactoryTest;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.concurrent.TimeUnit;
 
 
@@ -37,7 +42,7 @@ public class LoginPageTest {
 
 	
 
-		@Test
+		
 		public void bingSearchTest() throws InterruptedException{
 		LoginPage bingSearch = new LoginPage(driver);
 		bingSearch.searchBing("Books");
@@ -51,7 +56,7 @@ public class LoginPageTest {
 	     Thread.sleep(2000);
 		}
 		
-		@Test
+	
 		public void bingSearchTest1() throws InterruptedException{
 	     // invoke the beforeTest method over here 
 			setup();
@@ -66,7 +71,7 @@ public class LoginPageTest {
 	     
 	     Thread.sleep(2000);
 		}
-		@Test
+	
 		public void bingSearchTest2() throws InterruptedException{
 	     // invoke the beforeTest method over here 
 			setup();
@@ -83,7 +88,7 @@ public class LoginPageTest {
 	     
 	     Thread.sleep(2000);
 		}
-		@Test
+		
 		public void bingSearchTest3() throws InterruptedException{
 	     // invoke the beforeTest method over here 
 			setup();
@@ -100,20 +105,39 @@ public class LoginPageTest {
 	     
 	     Thread.sleep(2000);
 		}
-		
-		public void NewsTest() throws InterruptedException{
+	   @Test
+		public void parameter() throws InterruptedException, ClassNotFoundException, SQLException{
 			
-			setup();
+			// put the data base method in here 
 			
-			LoginPage newsTest = new LoginPage(driver);
-			newsTest.News();
-			
-			boolean News = driver.getPageSource().contains("My 10 Favorite Books: Alan Cumming");
-			Assert.assertEquals(News, true);
-			driver.close();
-			
-			Thread.sleep(2000);
-		}
-		
+			String userName = "sa";
+     		String password = "Sk@456321";
 
+     		String url = "jdbc:sqlserver://104.37.189.218\\SQLEXPRESS;databaseName=Books";
+
+     		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+     		Connection conn = DriverManager.getConnection(url, userName, password);
+     		Statement sta =  conn.createStatement();
+     		String Sql = "select * from Books.[dbo].[InternetMarketing]";
+     		ResultSet rs = sta.executeQuery(Sql);
+     		while (rs.next()) {
+     			System.out.println(rs.getString(1)); 
+     			
+		// This is where we test with the database to see if the connection is possible
+			  
+			LoginPage newsTest = new LoginPage(driver);
+			
+			newsTest.searchBing(rs.getString(1));
+	
+			
+			boolean test = driver.getPageSource().contains("O");
+			
+			Assert.assertEquals(test, true);
+		     
+		     Thread.sleep(5000);
+		   
+			 driver.close();
+		}
+	
+	   }
 }
