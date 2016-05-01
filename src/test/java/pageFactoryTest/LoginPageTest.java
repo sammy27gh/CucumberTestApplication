@@ -139,6 +139,7 @@ public class LoginPageTest {
 
  	     		 driver.close();
  				setup();
+ 				
 		}
      		
 	   }
