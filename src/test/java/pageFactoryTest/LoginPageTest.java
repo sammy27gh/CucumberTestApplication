@@ -42,7 +42,7 @@ public class LoginPageTest {
 
 	
 
-	   @Test
+	
 		public void bingSearchTest() throws InterruptedException{
 		LoginPage bingSearch = new LoginPage(driver);
 		bingSearch.searchBing("Books");
@@ -56,7 +56,7 @@ public class LoginPageTest {
 	     Thread.sleep(2000);
 		}
 		
-		   @Test
+		   
 		public void bingSearchTest1() throws InterruptedException{
 	     // invoke the beforeTest method over here 
 			setup();
@@ -71,7 +71,7 @@ public class LoginPageTest {
 	     
 	     Thread.sleep(2000);
 		}
-		   @Test
+		  
 		public void bingSearchTest2() throws InterruptedException{
 	     // invoke the beforeTest method over here 
 			setup();
@@ -88,7 +88,7 @@ public class LoginPageTest {
 	     
 	     Thread.sleep(2000);
 		}
-		   @Test
+		 
 		public void bingSearchTest3() throws InterruptedException{
 	     // invoke the beforeTest method over here 
 			setup();
@@ -108,6 +108,8 @@ public class LoginPageTest {
 	   @Test
 		public void parameter() throws InterruptedException, ClassNotFoundException, SQLException{
 			
+		   
+		   
 			// put the data base method in here 
 			
 			String userName = "sa";
@@ -122,25 +124,22 @@ public class LoginPageTest {
      		ResultSet rs = sta.executeQuery(Sql);
      		while (rs.next()) {
      			System.out.println(rs.getString(1)); 
-     			
-		// This is where we test with the database to see if the connection is possible
-			  
-			LoginPage newsTest = new LoginPage(driver);
-			
-			newsTest.searchBing(rs.getString(1));
-	
-			
-			boolean test = driver.getPageSource().contains("O");
-			
-			Assert.assertEquals(test, true);
-		     
-		     Thread.sleep(5000);
-		   
-			 driver.close();
-			 
-			 
+     		// This is where we test with the database to see if the connection is possible
+  			  
+ 				LoginPage newsTest = new LoginPage(driver);
+ 				
+ 				newsTest.searchBing(rs.getString(1));
+ 				 Thread.sleep(9000);
+ 				
+ 				boolean test = driver.getPageSource().contains("O");
+ 				
+ 				Assert.assertEquals(test, true);
+ 			     
+ 				Thread.sleep(9000);
+
+ 	     		 driver.close();
+ 				setup();
 		}
      		
-	
 	   }
 }
