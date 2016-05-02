@@ -39,6 +39,17 @@ public class LoginPageTest {
 	  driver.get("http://www.bing.com/");
 
 	    }
+	@AfterTest
+	   public void setupAfter(){
+	 
+	  driver = new FirefoxDriver();
+	 
+	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	 
+	  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
+	  driver.get("http://www.bing.com/");
+
+	    }
 
 	
 

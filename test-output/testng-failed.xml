@@ -12,6 +12,8 @@
         <methods>
           <include name="bingSearchTest3"/>
           <include name="setup"/>
+          <include name="setupAfter"/>
+          <include name="parameter"/>
           <include name="bingSearchTest"/>
           <include name="bingSearchTest1"/>
         </methods>
