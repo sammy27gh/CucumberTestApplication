@@ -134,7 +134,7 @@ public class LoginPageTest {
  				
  				boolean test = driver.getPageSource().contains(rs.getString(1));
  				
- 				//Assert.assertEquals(test, true);
+ 				
  				if (test == true ){
  					
 				System.out.println(rs.getString(1)+ ":  Passed");
@@ -145,19 +145,64 @@ public class LoginPageTest {
  					System.out.println(rs.getString(1)+ ":  failed");
  					
  				}
+ 				
  				 Thread.sleep(4000);
 
  	 	     	driver.close();
  	 				 
  	 	     	setup();
  	 		
- 	 	      if (test != true) {
-                   continue ;
-              }
+ 	 	   
 		
      		}	
+     		
      	    
      		
-	   }
+	   }     
+	   
+	@Test
+	public void ParameterValidater() throws SQLException, InterruptedException, ClassNotFoundException{
+		   
+		   
+					// put the data base method in here 
+					
+					String userName = "sa";
+		     		String password = "Sk@456321";
+
+		     		String url = "jdbc:sqlserver://104.37.189.218\\SQLEXPRESS;databaseName=Books";
+
+		     		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+		     		Connection conn = DriverManager.getConnection(url, userName, password);
+		     		Statement sta =  conn.createStatement();
+		     		String Sql = "select * from Books.[dbo].[seleniumTestData]";
+		     		ResultSet rs = sta.executeQuery(Sql);
+		     		while (rs.next()) {
+		     			
+		     			System.out.println(rs.getString(1)); 
+		     		// This is where we test with the database to see if the connection is possible
+		  			  
+		 				LoginPage newsTest = new LoginPage(driver);
+		 				
+		 				newsTest.searchBing("books");
+		 				Thread.sleep(9000);
+		 				
+		 				boolean test = driver.getPageSource().contains(rs.getString(1));
+		 				
+		 				// This will be used to make sure that the method is tested as well. 
+		 				Assert.assertEquals(test, true);
+		 				
+		 				
+		 				 Thread.sleep(4000);
+
+		 	 	     	driver.close();
+		 	 				 
+		 	 	     	setup();
+		 	 		
+		 	 	   
+				
+		     		}	
+		
+	}
+	   
 	   
 }
