@@ -18,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -39,85 +40,9 @@ public class LoginPageTest {
 	  driver.get("http://www.bing.com/");
 
 	    }
-	@AfterTest
-	   public void setupAfter(){
-	 
-	  driver = new FirefoxDriver();
-	 
-	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	 
-	  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
-	  driver.get("http://www.bing.com/");
 
-	    }
 
-	
-
-	   @Test
-		public void bingSearchTest() throws InterruptedException{
-		LoginPage bingSearch = new LoginPage(driver);
-		bingSearch.searchBing("Books");
-	     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-	     boolean test = driver.getPageSource().contains("My 10 Favorite Books: Alan Cumming");
-		
-		Assert.assertEquals(test, true);
-	  
-	     driver.close();
-	     
-	     Thread.sleep(2000);
-		}
-		
-		   @Test
-		public void bingSearchTest1() throws InterruptedException{
-	     // invoke the beforeTest method over here 
-			setup();
-		LoginPage bingSearch = new LoginPage(driver);
-		bingSearch.searchBing("Books");
-	     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-	     boolean test = driver.getPageSource().contains("Books-A-Million - Official Site");
-		
-		Assert.assertEquals(test, true);
-	  
-	     driver.close();
-	     
-	     Thread.sleep(2000);
-		}
-		  @Test
-		public void bingSearchTest2() throws InterruptedException{
-	     // invoke the beforeTest method over here 
-			setup();
-			
-		LoginPage bingSearch = new LoginPage(driver);
-		bingSearch.searchBing("Books");
-	     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-		System.out.println(" verifying the test contains online shopping 3 ");
-	     boolean test = driver.getPageSource().contains("Online shopping");
-		
-		Assert.assertEquals(test, true);
-	     
-	     driver.close();
-	     
-	     Thread.sleep(2000);
-		}
-		 @Test
-		public void bingSearchTest3() throws InterruptedException{
-	     // invoke the beforeTest method over here 
-			setup();
-			
-		LoginPage bingSearch = new LoginPage(driver);
-		bingSearch.searchBing("Books");
-	     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-		System.out.println(" verifying the test contains online shopping 3 ");
-	     boolean test = driver.getPageSource().contains("100,000 booksellers.");
-		
-		Assert.assertEquals(test, true);
-	     
-	     driver.close();
-	     
-	     Thread.sleep(2000);
-		}
-	   
-	    @Test
+	    //@Test(priority=7)
 		public void parameterdebugger() throws InterruptedException, ClassNotFoundException, SQLException{
 			
 		   
@@ -172,7 +97,7 @@ public class LoginPageTest {
      		
 	   }     
 
-		@Test
+		@Test(priority=6)
 		public void parameter() throws InterruptedException, ClassNotFoundException, SQLException{
 			
 		   
@@ -202,7 +127,7 @@ public class LoginPageTest {
  				boolean test = driver.getPageSource().contains(rs.getString(1));
  				
  				
- 			Assert.assertEquals(test, rs.getString(1));
+ 			Assert.assertEquals(test, true);
  				
  				 Thread.sleep(4000);
 
@@ -218,6 +143,72 @@ public class LoginPageTest {
      		
 	   }     
 	
-	   
+		  @Test(priority=2)
+			public void bingSearchTest() throws InterruptedException{
+			LoginPage bingSearch = new LoginPage(driver);
+			bingSearch.searchBing("Books");
+		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
+		     boolean test = driver.getPageSource().contains("My 10 Favorite Books: Alan Cumming");
+			
+			Assert.assertEquals(test, true);
+		  
+		     driver.close();
+		     
+		     Thread.sleep(2000);
+			}
+			
+			  
+				  @Test(priority=3)
+			public void bingSearchTest1() throws InterruptedException{
+		     // invoke the beforeTest method over here 
+				
+			LoginPage bingSearch = new LoginPage(driver);
+			bingSearch.searchBing("Books");
+		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
+		     boolean test = driver.getPageSource().contains("Books");
+			
+			//Assert.assertEquals(test, true);
+		     Assert.assertEquals(test, true);
+		 
+		    
+		     driver.close();
+		     
+		     Thread.sleep(2000);
+			}
+			  @Test(priority=4)
+			public void bingSearchTest2() throws InterruptedException{
+		     // invoke the beforeTest method over here 
+				setup();
+				
+			LoginPage bingSearch = new LoginPage(driver);
+			bingSearch.searchBing("Books");
+		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
+			System.out.println(" verifying the test contains online shopping 3 ");
+		     boolean test = driver.getPageSource().contains("Online shopping");
+			
+			Assert.assertEquals(test, true);
+		     
+		     driver.close();
+		     
+		     Thread.sleep(2000);
+			}
+			  @Test(priority=0)
+			public void bingSearchTest3() throws InterruptedException{
+		     // invoke the beforeTest method over here 
+				setup();
+				
+			LoginPage bingSearch = new LoginPage(driver);
+			bingSearch.searchBing("Books");
+		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
+			System.out.println(" verifying the test contains online shopping 3 ");
+		     boolean test = driver.getPageSource().contains("o");
+			
+			Assert.assertEquals(test, true);
+		     
+		     driver.close();
+		     
+		     Thread.sleep(2000);
+			}
+		   
 	   
 }

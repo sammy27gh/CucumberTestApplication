@@ -6,18 +6,4 @@
       <class name="pageFactoryTest.LoginPageTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="pageFactoryTest.LoginPageTest">
-        <methods>
-          <include name="bingSearchTest3"/>
-          <include name="setup"/>
-          <include name="setupAfter"/>
-          <include name="parameter"/>
-          <include name="bingSearchTest"/>
-          <include name="bingSearchTest1"/>
-        </methods>
-      </class> <!-- pageFactoryTest.LoginPageTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
