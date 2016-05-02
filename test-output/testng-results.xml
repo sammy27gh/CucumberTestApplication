@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="129032" started-at="2016-05-02T04:46:02Z" finished-at="2016-05-02T04:48:11Z">
+  <suite name="Default suite" duration-ms="47100" started-at="2016-05-02T05:08:40Z" finished-at="2016-05-02T05:09:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="129032" started-at="2016-05-02T04:46:02Z" finished-at="2016-05-02T04:48:11Z">
+    <test name="Default test" duration-ms="47100" started-at="2016-05-02T05:08:40Z" finished-at="2016-05-02T05:09:28Z">
       <class name="pageFactoryTest.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.LoginPageTest@fb70426]" name="setup" is-config="true" duration-ms="7611" started-at="2016-05-01T23:46:02Z" finished-at="2016-05-01T23:46:09Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.LoginPageTest@5e92db2]" name="setup" is-config="true" duration-ms="7400" started-at="2016-05-02T00:08:40Z" finished-at="2016-05-02T00:08:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="parameterdebugger()[pri:0, instance:pageFactoryTest.LoginPageTest@fb70426]" name="parameterdebugger" duration-ms="110439" started-at="2016-05-01T23:46:09Z" finished-at="2016-05-01T23:48:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- parameterdebugger -->
-        <test-method status="FAIL" signature="parameter()[pri:1, instance:pageFactoryTest.LoginPageTest@fb70426]" name="parameter" duration-ms="10954" started-at="2016-05-01T23:48:00Z" finished-at="2016-05-01T23:48:11Z">
+        <test-method status="FAIL" signature="bingSearchTest()[pri:0, instance:pageFactoryTest.LoginPageTest@5e92db2]" name="bingSearchTest" duration-ms="3242" started-at="2016-05-02T00:08:48Z" finished-at="2016-05-02T00:08:51Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Math] but found [true]]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Math] but found [true]
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:179)
-	at pageFactoryTest.LoginPageTest.parameter(LoginPageTest.java:194)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at org.testng.Assert.assertEquals(Assert.java:315)
+	at pageFactoryTest.LoginPageTest.bingSearchTest(LoginPageTest.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,7 +54,99 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- parameter -->
+        </test-method> <!-- bingSearchTest -->
+        <test-method status="FAIL" signature="bingSearchTest1()[pri:0, instance:pageFactoryTest.LoginPageTest@5e92db2]" name="bingSearchTest1" duration-ms="10770" started-at="2016-05-02T00:08:51Z" finished-at="2016-05-02T00:09:02Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at org.testng.Assert.assertEquals(Assert.java:315)
+	at pageFactoryTest.LoginPageTest.bingSearchTest1(LoginPageTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bingSearchTest1 -->
+        <test-method status="PASS" signature="bingSearchTest2()[pri:0, instance:pageFactoryTest.LoginPageTest@5e92db2]" name="bingSearchTest2" duration-ms="13515" started-at="2016-05-02T00:09:02Z" finished-at="2016-05-02T00:09:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bingSearchTest2 -->
+        <test-method status="FAIL" signature="bingSearchTest3()[pri:0, instance:pageFactoryTest.LoginPageTest@5e92db2]" name="bingSearchTest3" duration-ms="12133" started-at="2016-05-02T00:09:15Z" finished-at="2016-05-02T00:09:28Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at org.testng.Assert.assertEquals(Assert.java:315)
+	at pageFactoryTest.LoginPageTest.bingSearchTest3(LoginPageTest.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bingSearchTest3 -->
       </class> <!-- pageFactoryTest.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

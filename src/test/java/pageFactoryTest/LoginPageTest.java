@@ -42,7 +42,7 @@ public class LoginPageTest {
 
 	
 
-	
+	   @Test
 		public void bingSearchTest() throws InterruptedException{
 		LoginPage bingSearch = new LoginPage(driver);
 		bingSearch.searchBing("Books");
@@ -56,7 +56,7 @@ public class LoginPageTest {
 	     Thread.sleep(2000);
 		}
 		
-		   
+		   @Test
 		public void bingSearchTest1() throws InterruptedException{
 	     // invoke the beforeTest method over here 
 			setup();
@@ -71,7 +71,7 @@ public class LoginPageTest {
 	     
 	     Thread.sleep(2000);
 		}
-		  
+		  @Test
 		public void bingSearchTest2() throws InterruptedException{
 	     // invoke the beforeTest method over here 
 			setup();
@@ -88,7 +88,7 @@ public class LoginPageTest {
 	     
 	     Thread.sleep(2000);
 		}
-		 
+		 @Test
 		public void bingSearchTest3() throws InterruptedException{
 	     // invoke the beforeTest method over here 
 			setup();
@@ -106,7 +106,7 @@ public class LoginPageTest {
 	     Thread.sleep(2000);
 		}
 	   
-		@Test
+	    @Test
 		public void parameterdebugger() throws InterruptedException, ClassNotFoundException, SQLException{
 			
 		   
