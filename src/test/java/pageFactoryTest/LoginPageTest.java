@@ -161,7 +161,7 @@ public class LoginPageTest {
      		
 	   }     
 
-		@Test(priority = 1)
+		@Test
 		public void parameter() throws InterruptedException, ClassNotFoundException, SQLException{
 			
 		   
