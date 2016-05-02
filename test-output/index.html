@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\samuel.samuel-andoh\AppData\Local\Temp\testng-eclipse--44030927\testng-customsuite.xml</span>
+                    <span>C:\Users\samuel.samuel-andoh\AppData\Local\Temp\testng-eclipse-406590468\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pageFactoryTest.LoginPageTest" hash-for-method="testparameterMethod">testparameterMethod</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pageFactoryTest.LoginPageTest" hash-for-method="parameter">parameter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -116,7 +116,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pageFactoryTest.LoginPageTest" hash-for-method="parameter">parameter</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="pageFactoryTest.LoginPageTest" hash-for-method="parameterdebugger">parameterdebugger</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -139,17 +139,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testparameterMethod">
-                  </a> <!-- testparameterMethod -->
-                  <span class="method-name">testparameterMethod</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+                  <a name="parameter">
+                  </a> <!-- parameter -->
+                  <span class="method-name">parameter</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Math] but found [true]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:305)
-	at org.testng.Assert.assertEquals(Assert.java:315)
-	at pageFactoryTest.LoginPageTest.testparameterMethod(LoginPageTest.java:192)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at pageFactoryTest.LoginPageTest.parameter(LoginPageTest.java:194)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -188,9 +187,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="parameter">
-                  </a> <!-- parameter -->
-                  <span class="method-name">parameter</span>
+                  <a name="parameterdebugger">
+                  </a> <!-- parameterdebugger -->
+                  <span class="method-name">parameterdebugger</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,7 +197,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\samuel.samuel-andoh\AppData\Local\Temp\testng-eclipse--44030927\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\samuel.samuel-andoh\AppData\Local\Temp\testng-eclipse-406590468\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -215,7 +214,7 @@
       &lt;class name=&quot;pageFactoryTest.LoginPageTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;setup&quot;/&gt;
-          &lt;include name=&quot;testparameterMethod&quot;/&gt;
+          &lt;include name=&quot;parameter&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- pageFactoryTest.LoginPageTest --&gt;
     &lt;/classes&gt;
@@ -262,13 +261,13 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'parameter')
+data.setCell(0, 1, 'parameterdebugger')
 data.setCell(0, 2, 'pageFactoryTest.LoginPageTest')
-data.setCell(0, 3, 119939);
+data.setCell(0, 3, 110439);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testparameterMethod')
+data.setCell(1, 1, 'parameter')
 data.setCell(1, 2, 'pageFactoryTest.LoginPageTest')
-data.setCell(1, 3, 32330);
+data.setCell(1, 3, 10954);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -305,14 +304,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">parameter</span>
-                <span class="method-start">7374 ms</span>
+                <span class="method-name">parameterdebugger</span>
+                <span class="method-start">7625 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testparameterMethod</span>
-                <span class="method-start">127317 ms</span>
+                <span class="method-name">parameter</span>
+                <span class="method-start">118070 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
