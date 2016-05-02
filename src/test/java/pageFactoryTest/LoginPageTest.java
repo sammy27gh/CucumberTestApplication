@@ -129,19 +129,26 @@ public class LoginPageTest {
   			  
  				LoginPage newsTest = new LoginPage(driver);
  				
- 				newsTest.searchBing(rs.getString(1));
- 				 Thread.sleep(9000);
+ 				newsTest.searchBing("books");
+ 				Thread.sleep(9000);
  				
- 				boolean test = driver.getPageSource().contains("samuelANdoh");
+ 				boolean test = driver.getPageSource().contains(rs.getString(1));
  				
  				Assert.assertEquals(test, true);
- 			     
- 				Thread.sleep(9000);
-
- 	     		 driver.close();
- 				setup();
  				
-		}
+ 				 Thread.sleep(4000);
+
+ 	 	     	driver.close();
+ 	 				 
+ 	 	     	setup();
+ 	 		
+ 	 	      if (test != true) {
+                   continue ;
+              }
+		
+     		}	
+     	    
      		
 	   }
+	   
 }
