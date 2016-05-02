@@ -132,7 +132,7 @@ public class LoginPageTest {
  				newsTest.searchBing(rs.getString(1));
  				 Thread.sleep(9000);
  				
- 				boolean test = driver.getPageSource().contains("O");
+ 				boolean test = driver.getPageSource().contains("samuelANdoh");
  				
  				Assert.assertEquals(test, true);
  			     
