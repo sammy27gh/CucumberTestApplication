@@ -120,9 +120,10 @@ public class LoginPageTest {
      		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
      		Connection conn = DriverManager.getConnection(url, userName, password);
      		Statement sta =  conn.createStatement();
-     		String Sql = "select * from Books.[dbo].[InternetMarketing]";
+     		String Sql = "select * from Books.[dbo].[seleniumTestData]";
      		ResultSet rs = sta.executeQuery(Sql);
      		while (rs.next()) {
+     			
      			System.out.println(rs.getString(1)); 
      		// This is where we test with the database to see if the connection is possible
   			  
