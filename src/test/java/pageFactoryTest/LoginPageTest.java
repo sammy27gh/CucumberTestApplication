@@ -134,8 +134,17 @@ public class LoginPageTest {
  				
  				boolean test = driver.getPageSource().contains(rs.getString(1));
  				
- 				Assert.assertEquals(test, true);
+ 				//Assert.assertEquals(test, true);
+ 				if (test == true ){
+ 					
+				System.out.println(rs.getString(1)+ ":  Passed");
+			
  				
+ 				}else 
+ 				{
+ 					System.out.println(rs.getString(1)+ ":  failed");
+ 					
+ 				}
  				 Thread.sleep(4000);
 
  	 	     	driver.close();
