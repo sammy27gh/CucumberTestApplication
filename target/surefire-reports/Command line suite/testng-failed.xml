@@ -4,22 +4,9 @@
   <test name="Command line test" preserve-order="false">
     <classes>
       <class name="pageFactoryTest.aLoginPageTest"/>
-      <class name="pageFactoryTest.mAppTest"/>
+      <class name="pageFactoryTest.bAppTest"/>
+      <class name="pageFactoryTest.cAppTest"/>
+      <class name="pageFactoryTest.dAppTest"/>
     </classes>
   </test> <!-- Command line test -->
-  <test name="Command line test(failed)">
-    <classes>
-      <class name="pageFactoryTest.mAppTest">
-        <methods>
-          <include name="setup1"/>
-          <include name="bingSearchTest2"/>
-        </methods>
-      </class> <!-- pageFactoryTest.mAppTest -->
-      <class name="pageFactoryTest.aLoginPageTest">
-        <methods>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- pageFactoryTest.aLoginPageTest -->
-    </classes>
-  </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->
