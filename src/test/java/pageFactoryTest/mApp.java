@@ -41,7 +41,7 @@ public class mApp {
 
 
 			  
-			  @Test(priority=3)
+			  @Test
 			public void bingSearchTest1() throws InterruptedException{
 		     // invoke the beforeTest method over here 
 					 
@@ -58,7 +58,7 @@ public class mApp {
 		     
 		     Thread.sleep(2000);
 			}
-			 @Test(priority=4)
+			 @Test
 			public void bingSearchTest2() throws InterruptedException{
 		     // invoke the beforeTest method over here 
 				setup();
