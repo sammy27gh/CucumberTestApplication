@@ -42,7 +42,7 @@ public class aLoginPageTest {
           
 	
 	
-	@Test
+	//@Test
 	public void parameter() throws InterruptedException, ClassNotFoundException, SQLException{
 		
 		setup();

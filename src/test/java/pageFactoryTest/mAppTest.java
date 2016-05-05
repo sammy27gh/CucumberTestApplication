@@ -44,7 +44,7 @@ public class mAppTest {
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Dentistry");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-		     boolean test = driver.getPageSource().contains("o");
+		     boolean test = driver.getPageSource().contains("kofi and his friends ");
 			
 			//Assert.assertEquals(test, true);
 		     Assert.assertEquals(test, true);
