@@ -15,7 +15,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class LoginPage {
+public class aLoginPage {
 	
 	WebDriver driver; 
 	
@@ -43,7 +43,7 @@ public class LoginPage {
 	WebElement clickSearch;
 	
 	// constructor for the class
-	public LoginPage(WebDriver driver){
+	public aLoginPage(WebDriver driver){
 	this.driver = driver;
 	PageFactory.initElements(driver, this);
 	

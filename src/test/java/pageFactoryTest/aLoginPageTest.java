@@ -18,14 +18,13 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.Reporter;
-import org.testng.annotations.AfterTest;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import pageFactory.LoginPage;
+import pageFactory.aLoginPage;
 
-public class LoginPageTest {
+public class aLoginPageTest {
 	 
 	WebDriver driver;
 	  
@@ -42,8 +41,8 @@ public class LoginPageTest {
 	    }
 
 
-	    //@Test(priority=7)
-		public void parameterdebugger() throws InterruptedException, ClassNotFoundException, SQLException{
+	    @Test(priority=7)
+		public void parameterTestData() throws InterruptedException, ClassNotFoundException, SQLException{
 			
 		   
 		   
@@ -66,7 +65,7 @@ public class LoginPageTest {
   			  
  				LoginPage newsTest = new LoginPage(driver);
  				
- 				newsTest.searchBing("books");
+ 				newsTest.searchBing("Emaail Books");
  				Thread.sleep(9000);
  				
  				boolean test = driver.getPageSource().contains(rs.getString(1));
@@ -97,10 +96,10 @@ public class LoginPageTest {
      		
 	   }     
 
-		@Test(priority=6)
+		//@Test(priority=6)
 		public void parameter() throws InterruptedException, ClassNotFoundException, SQLException{
 			
-		   
+			setup();
 		   
 			// put the data base method in here 
 			
@@ -121,30 +120,31 @@ public class LoginPageTest {
   			  
  				LoginPage newsTest = new LoginPage(driver);
  				
- 				newsTest.searchBing("books");
+ 				newsTest.searchBing("Books");
  				Thread.sleep(9000);
  				
  				boolean test = driver.getPageSource().contains(rs.getString(1));
- 				
- 				
- 			Assert.assertEquals(test, true);
- 				
- 				 Thread.sleep(4000);
+				
+				
+				Assert.assertEquals(test, true);
+				 Thread.sleep(4000);
 
- 	 	     	driver.close();
- 	 				 
- 	 	     	setup();
- 	 		
- 	 	   
+		 	     	driver.close();
+		 				 
+		 	     	setup();
+		 		
 		
      		}	
      		
-     	    
+     		
+				
+			
      		
 	   }     
 	
-		  @Test(priority=2)
+		 // @Test(priority=2)
 			public void bingSearchTest() throws InterruptedException{
+			  setup();
 			LoginPage bingSearch = new LoginPage(driver);
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
@@ -158,10 +158,10 @@ public class LoginPageTest {
 			}
 			
 			  
-				  @Test(priority=3)
+			//	  @Test(priority=3)
 			public void bingSearchTest1() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-				
+					  setup();
 			LoginPage bingSearch = new LoginPage(driver);
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
@@ -175,7 +175,7 @@ public class LoginPageTest {
 		     
 		     Thread.sleep(2000);
 			}
-			  @Test(priority=4)
+			//  @Test(priority=4)
 			public void bingSearchTest2() throws InterruptedException{
 		     // invoke the beforeTest method over here 
 				setup();
@@ -192,7 +192,7 @@ public class LoginPageTest {
 		     
 		     Thread.sleep(2000);
 			}
-			  @Test(priority=0)
+			 // @Test(priority=0)
 			public void bingSearchTest3() throws InterruptedException{
 		     // invoke the beforeTest method over here 
 				setup();
