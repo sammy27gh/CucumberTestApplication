@@ -7,11 +7,7 @@
  */
 package pageFactoryTest;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+
 import java.util.concurrent.TimeUnit;
 
 
@@ -23,12 +19,12 @@ import org.testng.annotations.Test;
 
 import pageFactory.aLoginPage;
 
-public class mApp {
+public class mAppTest {
 	 
 	WebDriver driver;
 	  
 	@BeforeTest
-	   public void setup(){
+	   public void setup1(){
 	 
 	  driver = new FirefoxDriver();
 	 
@@ -61,7 +57,7 @@ public class mApp {
 			 @Test
 			public void bingSearchTest2() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-				setup();
+				setup1();
 				
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
@@ -78,7 +74,7 @@ public class mApp {
 			 // @Test(priority=0)
 			public void bingSearchTest3() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-				setup();
+				setup1();
 				
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");

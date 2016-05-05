@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-pageFactoryTest.LoginPageTest">
-              <span class="suite-name border-passed">pageFactoryTest.LoginPageTest</span>
+            <a href="#" class="navigator-link" panel-name="suite-pageFactoryTest.aLoginPageTest">
+              <span class="suite-name border-failed">pageFactoryTest.aLoginPageTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-pageFactoryTest.LoginPageTest">
+                  <a href="#" class="navigator-link " panel-name="test-xml-pageFactoryTest.aLoginPageTest">
                     <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-pageFactoryTest.LoginPageTest">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-pageFactoryTest.aLoginPageTest">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-pageFactoryTest.LoginPageTest">
+                  <a href="#" class="navigator-link " panel-name="group-pageFactoryTest.aLoginPageTest">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-pageFactoryTest.LoginPageTest">
+                  <a href="#" class="navigator-link " panel-name="times-pageFactoryTest.aLoginPageTest">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-pageFactoryTest.LoginPageTest">
+                  <a href="#" class="navigator-link " panel-name="reporter-pageFactoryTest.aLoginPageTest">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-pageFactoryTest.LoginPageTest">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-pageFactoryTest.aLoginPageTest">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-pageFactoryTest.LoginPageTest">
+                  <a href="#" class="navigator-link " panel-name="chronological-pageFactoryTest.aLoginPageTest">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-pageFactoryTest.LoginPageTest" class="hide-methods passed suite-pageFactoryTest.LoginPageTest"> (hide)</a> <!-- hide-methods passed suite-pageFactoryTest.LoginPageTest -->
-                      <a href="#" panel-name="suite-pageFactoryTest.LoginPageTest" class="show-methods passed suite-pageFactoryTest.LoginPageTest"> (show)</a> <!-- show-methods passed suite-pageFactoryTest.LoginPageTest -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-pageFactoryTest.aLoginPageTest" class="hide-methods failed suite-pageFactoryTest.aLoginPageTest"> (hide)</a> <!-- hide-methods failed suite-pageFactoryTest.aLoginPageTest -->
+                      <a href="#" panel-name="suite-pageFactoryTest.aLoginPageTest" class="show-methods failed suite-pageFactoryTest.aLoginPageTest"> (show)</a> <!-- show-methods failed suite-pageFactoryTest.aLoginPageTest -->
                     </span>
-                    <div class="method-list-content passed suite-pageFactoryTest.LoginPageTest">
+                    <div class="method-list-content failed suite-pageFactoryTest.aLoginPageTest">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-pageFactoryTest.LoginPageTest" title="pageFactoryTest.LoginPageTest" hash-for-method="bingSearchTest">bingSearchTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-pageFactoryTest.aLoginPageTest" title="pageFactoryTest.aLoginPageTest" hash-for-method="parameterTestData">parameterTestData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-pageFactoryTest.LoginPageTest -->
+                    </div> <!-- method-list-content failed suite-pageFactoryTest.aLoginPageTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,68 +116,123 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-pageFactoryTest.LoginPageTest" class="panel pageFactoryTest.LoginPageTest">
-          <div class="suite-pageFactoryTest.LoginPageTest-class-passed">
+        <div panel-name="suite-pageFactoryTest.aLoginPageTest" class="panel pageFactoryTest.aLoginPageTest">
+          <div class="suite-pageFactoryTest.aLoginPageTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">pageFactoryTest.LoginPageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">pageFactoryTest.aLoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bingSearchTest">
-                  </a> <!-- bingSearchTest -->
-                  <span class="method-name">bingSearchTest</span>
+                  <a name="parameterTestData">
+                  </a> <!-- parameterTestData -->
+                  <span class="method-name">parameterTestData</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;samuel-andoh&apos;, ip: &apos;172.31.99.227&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: ff5d9788-eb89-4b67-b0ea-80f2dc1da619
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at pageFactoryTest.aLoginPageTest.setup(aLoginPageTest.java:39)
+	at pageFactoryTest.aLoginPageTest.parameterTestData(aLoginPageTest.java:89)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7058 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:162)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 36 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 51 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-pageFactoryTest.LoginPageTest-class-passed -->
-        </div> <!-- panel pageFactoryTest.LoginPageTest -->
-        <div panel-name="test-xml-pageFactoryTest.LoginPageTest" class="panel">
+          </div> <!-- suite-pageFactoryTest.aLoginPageTest-class-failed -->
+        </div> <!-- panel pageFactoryTest.aLoginPageTest -->
+        <div panel-name="test-xml-pageFactoryTest.aLoginPageTest" class="panel">
           <div class="main-panel-header rounded-window-top">
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite verbose=&quot;0&quot; name=&quot;pageFactoryTest.LoginPageTest&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;pageFactoryTest.aLoginPageTest&quot;&gt;
   &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;pageFactoryTest.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;pageFactoryTest.aLoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
-&lt;/suite&gt; &lt;!-- pageFactoryTest.LoginPageTest --&gt;
+  &lt;test name=&quot;Command line test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pageFactoryTest.aLoginPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;parameterTestData&quot;/&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- pageFactoryTest.aLoginPageTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- pageFactoryTest.aLoginPageTest --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-pageFactoryTest.LoginPageTest" class="panel">
+        <div panel-name="testlist-pageFactoryTest.aLoginPageTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for pageFactoryTest.LoginPageTest</span>
+            <span class="header-content">Tests for pageFactoryTest.aLoginPageTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
                 <span class="test-name">Command line test (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">Command line test(failed) (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-pageFactoryTest.LoginPageTest" class="panel">
+        <div panel-name="group-pageFactoryTest.aLoginPageTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for pageFactoryTest.LoginPageTest</span>
+            <span class="header-content">Groups for pageFactoryTest.aLoginPageTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-pageFactoryTest.LoginPageTest" class="panel">
+        <div panel-name="times-pageFactoryTest.aLoginPageTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for pageFactoryTest.LoginPageTest</span>
+            <span class="header-content">Times for pageFactoryTest.aLoginPageTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_pageFactoryTest.LoginPageTest');
-function tableData_pageFactoryTest.LoginPageTest() {
+suiteTableInitFunctions.push('tableData_pageFactoryTest.aLoginPageTest');
+function tableData_pageFactoryTest.aLoginPageTest() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -185,47 +240,49 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'bingSearchTest')
-data.setCell(0, 2, 'pageFactoryTest.LoginPageTest')
-data.setCell(0, 3, 2654);
-window.suiteTableData['pageFactoryTest.LoginPageTest']= { tableData: data, tableDiv: 'times-div-pageFactoryTest.LoginPageTest'}
+data.setCell(0, 1, 'parameterTestData')
+data.setCell(0, 2, 'pageFactoryTest.aLoginPageTest')
+data.setCell(0, 3, 87114);
+window.suiteTableData['pageFactoryTest.aLoginPageTest']= { tableData: data, tableDiv: 'times-div-pageFactoryTest.aLoginPageTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
-              <div id="times-div-pageFactoryTest.LoginPageTest">
-              </div> <!-- times-div-pageFactoryTest.LoginPageTest -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-pageFactoryTest.aLoginPageTest">
+              </div> <!-- times-div-pageFactoryTest.aLoginPageTest -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-pageFactoryTest.LoginPageTest" class="panel">
+        <div panel-name="reporter-pageFactoryTest.aLoginPageTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for pageFactoryTest.LoginPageTest</span>
+            <span class="header-content">Reporter output for pageFactoryTest.aLoginPageTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-pageFactoryTest.LoginPageTest" class="panel">
+        <div panel-name="ignored-methods-pageFactoryTest.aLoginPageTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-pageFactoryTest.LoginPageTest" class="panel">
+        <div panel-name="chronological-pageFactoryTest.aLoginPageTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">pageFactoryTest.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pageFactoryTest.aLoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">bingSearchTest</span>
-                <span class="method-start">8463 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">parameterTestData</span>
+                <span class="method-start">7770 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
