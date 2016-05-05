@@ -63,7 +63,7 @@ public class mAppTest {
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
 			System.out.println(" verifying the test contains online shopping 3 ");
-		     boolean test = driver.getPageSource().contains("00");
+		     boolean test = driver.getPageSource().contains("o");
 			
 			Assert.assertEquals(test, true);
 		     
