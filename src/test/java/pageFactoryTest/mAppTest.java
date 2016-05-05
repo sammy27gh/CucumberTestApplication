@@ -37,10 +37,10 @@ public class mAppTest {
 
 
 			  
-			  @Test
+			 @Test
 			public void bingSearchTest1() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-					 
+				  setup1(); 
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Dentistry");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
@@ -63,7 +63,7 @@ public class mAppTest {
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
 			System.out.println(" verifying the test contains online shopping 3 ");
-		     boolean test = driver.getPageSource().contains("Online shopping");
+		     boolean test = driver.getPageSource().contains("00");
 			
 			Assert.assertEquals(test, true);
 		     

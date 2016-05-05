@@ -96,7 +96,7 @@ public class aLoginPageTest {
      		
 	   }     
 
-		//@Test(priority=6)
+		@Test(priority=6)
 		public void parameter() throws InterruptedException, ClassNotFoundException, SQLException{
 			
 			setup();
