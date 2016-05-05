@@ -63,7 +63,7 @@ public class aLoginPageTest {
      			System.out.println(rs.getString(1)); 
      		// This is where we test with the database to see if the connection is possible
   			  
- 				LoginPage newsTest = new LoginPage(driver);
+ 				aLoginPage newsTest = new aLoginPage(driver);
  				
  				newsTest.searchBing("Emaail Books");
  				Thread.sleep(9000);
@@ -118,7 +118,7 @@ public class aLoginPageTest {
      			System.out.println(rs.getString(1)); 
      		// This is where we test with the database to see if the connection is possible
   			  
- 				LoginPage newsTest = new LoginPage(driver);
+ 				aLoginPage newsTest = new aLoginPage(driver);
  				
  				newsTest.searchBing("Books");
  				Thread.sleep(9000);
@@ -145,7 +145,7 @@ public class aLoginPageTest {
 		 // @Test(priority=2)
 			public void bingSearchTest() throws InterruptedException{
 			  setup();
-			LoginPage bingSearch = new LoginPage(driver);
+			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
 		     boolean test = driver.getPageSource().contains("My 10 Favorite Books: Alan Cumming");
@@ -162,7 +162,7 @@ public class aLoginPageTest {
 			public void bingSearchTest1() throws InterruptedException{
 		     // invoke the beforeTest method over here 
 					  setup();
-			LoginPage bingSearch = new LoginPage(driver);
+			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
 		     boolean test = driver.getPageSource().contains("Books");
@@ -180,7 +180,7 @@ public class aLoginPageTest {
 		     // invoke the beforeTest method over here 
 				setup();
 				
-			LoginPage bingSearch = new LoginPage(driver);
+			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
 			System.out.println(" verifying the test contains online shopping 3 ");
@@ -197,7 +197,7 @@ public class aLoginPageTest {
 		     // invoke the beforeTest method over here 
 				setup();
 				
-			LoginPage bingSearch = new LoginPage(driver);
+			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
 			System.out.println(" verifying the test contains online shopping 3 ");
