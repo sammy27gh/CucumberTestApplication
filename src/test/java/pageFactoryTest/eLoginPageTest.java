@@ -24,7 +24,7 @@ import org.testng.annotations.Test;
 
 import pageFactory.aLoginPage;
 
-public class aLoginPageTest {
+public class eLoginPageTest {
 	 
 	WebDriver driver;
 	  
