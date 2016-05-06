@@ -8,10 +8,12 @@
 package pageFactoryTest;
 
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -25,8 +27,10 @@ public class bAppTest {
 	  
 	@BeforeTest
 	   public void setup1(){
-	 
-	  driver = new FirefoxDriver();
+		File pathToFirefoxBinary = new File("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
+		FirefoxBinary firefoxbin = new FirefoxBinary(pathToFirefoxBinary);
+		driver = new FirefoxDriver(firefoxbin,null);
+	 // driver = new FirefoxDriver();
 	 
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	 
