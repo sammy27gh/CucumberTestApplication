@@ -28,7 +28,7 @@ public class bAppTest {
 	  
 	@BeforeTest
 	   public void setup1(){
-		File pathToBinary = new File("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
+		File pathToBinary = new File("C:\\Program Files\\Mozilla Firefox\\voucher.bin");
 		FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
 		FirefoxProfile firefoxProfile = new FirefoxProfile();       
 		WebDriver driver = new FirefoxDriver(ffBinary,firefoxProfile);
