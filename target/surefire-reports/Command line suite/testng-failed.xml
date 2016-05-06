@@ -3,10 +3,37 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test name="Command line test" preserve-order="false">
     <classes>
-      <class name="pageFactoryTest.aLoginPageTest"/>
       <class name="pageFactoryTest.bAppTest"/>
       <class name="pageFactoryTest.cAppTest"/>
       <class name="pageFactoryTest.dAppTest"/>
+      <class name="pageFactoryTest.eLoginPageTest"/>
     </classes>
   </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="pageFactoryTest.bAppTest">
+        <methods>
+          <include name="setup1"/>
+          <include name="bingSearchTest1"/>
+        </methods>
+      </class> <!-- pageFactoryTest.bAppTest -->
+      <class name="pageFactoryTest.eLoginPageTest">
+        <methods>
+          <include name="parameterTestData"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- pageFactoryTest.eLoginPageTest -->
+      <class name="pageFactoryTest.dAppTest">
+        <methods>
+          <include name="setup1"/>
+        </methods>
+      </class> <!-- pageFactoryTest.dAppTest -->
+      <class name="pageFactoryTest.cAppTest">
+        <methods>
+          <include name="bingSearchTest2"/>
+          <include name="setup1"/>
+        </methods>
+      </class> <!-- pageFactoryTest.cAppTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->
