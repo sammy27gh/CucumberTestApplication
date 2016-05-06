@@ -44,7 +44,7 @@ public class bAppTest {
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Dentistry");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-		     boolean test = driver.getPageSource().contains("oo");
+		     boolean test = driver.getPageSource().contains("o");
 			
 			//Assert.assertEquals(test, true);
 		     Assert.assertEquals(test, true);

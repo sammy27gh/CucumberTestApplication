@@ -66,10 +66,10 @@ public class dAppTest {
 			  
 				aLoginPage newsTest = new aLoginPage(driver);
 				
-				newsTest.searchBing("Books");
+				newsTest.searchBing(rs.getString(1));
 				Thread.sleep(9000);
 				
-				boolean test = driver.getPageSource().contains(rs.getString(1));
+				boolean test = driver.getPageSource().contains("o");
 			
 			
 			Assert.assertEquals(test, true);
