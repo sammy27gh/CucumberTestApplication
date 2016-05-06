@@ -7,6 +7,7 @@
  */
 package pageFactoryTest;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -16,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
@@ -30,8 +32,10 @@ public class eLoginPageTest {
 	  
 	@BeforeTest
 	   public void setup(){
-	 
-	  driver = new FirefoxDriver();
+		File pathToFirefoxBinary = new File("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
+		FirefoxBinary firefoxbin = new FirefoxBinary(pathToFirefoxBinary);
+		driver = new FirefoxDriver(firefoxbin,null);
+	  //driver = new FirefoxDriver();
 	 
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	 
