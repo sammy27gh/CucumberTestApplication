@@ -28,11 +28,8 @@ public class bAppTest {
 	  
 	@BeforeTest
 	   public void setup1(){
-		File pathToBinary = new File("C:\\Program Files\\Mozilla Firefox\\voucher.bin");
-		FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
-		FirefoxProfile firefoxProfile = new FirefoxProfile();       
-		WebDriver driver = new FirefoxDriver(ffBinary,firefoxProfile);
-	 // driver = new FirefoxDriver();
+		System.setProperty("webdriver.firefox.bin","C:\\Program Files\\Mozilla Firefox\\firefox.exe");
+	  driver = new FirefoxDriver();
 	 
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	 
