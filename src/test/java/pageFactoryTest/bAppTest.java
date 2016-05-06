@@ -27,10 +27,8 @@ public class bAppTest {
 	  
 	@BeforeTest
 	   public void setup1(){
-		File pathToFirefoxBinary = new File("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
-		FirefoxBinary firefoxbin = new FirefoxBinary(pathToFirefoxBinary);
-		driver = new FirefoxDriver(firefoxbin,null);
-	 // driver = new FirefoxDriver();
+		
+	 driver = new FirefoxDriver();
 	 
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	 
