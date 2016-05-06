@@ -9,29 +9,4 @@
       <class name="pageFactoryTest.eLoginPageTest"/>
     </classes>
   </test> <!-- Command line test -->
-  <test name="Command line test(failed)">
-    <classes>
-      <class name="pageFactoryTest.eLoginPageTest">
-        <methods>
-          <include name="parameterTestData"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- pageFactoryTest.eLoginPageTest -->
-      <class name="pageFactoryTest.dAppTest">
-        <methods>
-          <include name="setup1"/>
-        </methods>
-      </class> <!-- pageFactoryTest.dAppTest -->
-      <class name="pageFactoryTest.bAppTest">
-        <methods>
-          <include name="setup1"/>
-        </methods>
-      </class> <!-- pageFactoryTest.bAppTest -->
-      <class name="pageFactoryTest.cAppTest">
-        <methods>
-          <include name="setup1"/>
-        </methods>
-      </class> <!-- pageFactoryTest.cAppTest -->
-    </classes>
-  </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

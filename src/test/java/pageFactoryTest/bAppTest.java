@@ -8,13 +8,12 @@
 package pageFactoryTest;
 
 
-import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxBinary;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -27,8 +26,8 @@ public class bAppTest {
 	  
 	@BeforeTest
 	   public void setup1(){
-		
-	 driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chrome\\chromedriver.exe");
+	 driver = new ChromeDriver();
 	 
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	 
