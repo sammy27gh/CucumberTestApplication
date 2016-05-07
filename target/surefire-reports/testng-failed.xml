@@ -13,11 +13,13 @@
     <classes>
       <class name="pageFactoryTest.eLoginPageTest">
         <methods>
+          <include name="parameterTestData"/>
           <include name="setup"/>
         </methods>
       </class> <!-- pageFactoryTest.eLoginPageTest -->
       <class name="pageFactoryTest.cAppTest">
         <methods>
+          <include name="bingSearchTest2"/>
           <include name="setup1"/>
         </methods>
       </class> <!-- pageFactoryTest.cAppTest -->
