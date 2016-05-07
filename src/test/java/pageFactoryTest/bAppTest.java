@@ -28,7 +28,6 @@ public class bAppTest {
 	  
 	@BeforeTest
 	   public void setup1(){
-		System.setProperty("webdriver.firefox.bin","C:\\Program Files\\Mozilla Firefox\\firefox.exe");
 	  driver = new FirefoxDriver();
 	 
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
