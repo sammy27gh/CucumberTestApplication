@@ -8,14 +8,8 @@
 package pageFactoryTest;
 
 
-import java.io.File;
-import java.util.concurrent.TimeUnit;
-
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
