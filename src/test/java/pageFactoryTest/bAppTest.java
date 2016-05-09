@@ -10,6 +10,7 @@ package pageFactoryTest;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -18,8 +19,29 @@ import pageFactory.aLoginPage;
 
 public class bAppTest {
 	 
-	WebDriver driver;
-	  
+	
+	
+	
+	static String driverPath = "C:\\Users\\Administrator\\Documents\\IEDriver\\";
+	public WebDriver driver;
+	
+	@BeforeTest
+	public void setUp() {
+		System.out.println("*******************");
+		System.out.println("launching IE browser");
+		System.setProperty("webdriver.ie.driver", driverPath+"IEDriverServer.exe");
+		driver = new InternetExplorerDriver();
+		driver.manage().window().maximize();
+	}
+	@Test
+	public void testGooglePageTitleInIEBrowser() {
+		driver.navigate().to("http://www.bing.com");
+		String strPageTitle = driver.getTitle();
+		System.out.println("Page title: - "+strPageTitle);
+		//Assert.assertTrue(strPageTitle.equalsIgnoreCase("Google"), "Page title doesn't match");
+	}
+	
+	/*
 	@BeforeTest
 	   public void setup1(){
 	  driver = new FirefoxDriver();
@@ -31,12 +53,13 @@ public class bAppTest {
 
 	    }
 
+	*/
 
 			  
 			 @Test
 			public void bingSearchTest1() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-				  setup1(); 
+				   setUp();
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Dentistry");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
