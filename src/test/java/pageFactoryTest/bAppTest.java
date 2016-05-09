@@ -25,7 +25,7 @@ public class bAppTest {
 	
 	
 	
-	static String driverPath = "C:\\Users\\Administrator\\Documents\\IEDriver\\";
+	//static String driverPath = "C:\\Users\\Administrator\\Documents\\IEDriver\\";
 	public WebDriver driver;
 	/*
 	@BeforeTest
@@ -47,39 +47,39 @@ public class bAppTest {
 	*/
 	
 	@BeforeTest
-	   public void setup1(){
-	  driver = new FirefoxDriver();
-	 
-	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	  Reporter.log("launch the internet browser ");
-	  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
-	  driver.get("http://www.bing.com/");
-
-	    }
+				   public void setup1(){
+				  driver = new FirefoxDriver();
+				 
+				  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+				  Reporter.log("launch the internet browser ");
+				  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
+				  driver.get("http://www.bing.com/");
+			
+				    }
 
 	
 
 			  
-			 @Test
-			public void bingSearchTest1() throws InterruptedException{
-		     // invoke the beforeTest method over here 
-				   setup1();
-				   
-	         Reporter.log("Test for Books ");
-			aLoginPage bingSearch = new aLoginPage(driver);
-			bingSearch.searchBing("Dentistry");
-		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-		     boolean test = driver.getPageSource().contains("o");
-			
-			//Assert.assertEquals(test, true);
-		     Assert.assertEquals(test, true);
+					 @Test
+					public void bingSearchTest1() throws InterruptedException{
+				     // invoke the beforeTest method over here 
+						   setup1();
+						   
+			         Reporter.log("Test for Books ");
+					aLoginPage bingSearch = new aLoginPage(driver);
+					bingSearch.searchBing("Dentistry");
+				     //String searchFind = "driver.getPageSource().contains(Becker Books)";
+				     boolean test = driver.getPageSource().contains("o");
+					
+					//Assert.assertEquals(test, true);
+				     Assert.assertEquals(test, true);
 		 
 		    
-		     driver.close();
-		     
-		     Thread.sleep(2000);
-			}
-			 
+				     driver.close();
+				     
+				     Thread.sleep(2000);
+					}
+					 
 			
 		   
 	   
