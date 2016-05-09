@@ -19,6 +19,7 @@ public class aLoginPage {
 	
 	WebDriver driver; 
 	
+	
 	@FindBy(how= How.NAME,using ="Email")
 	WebElement UserName;
 	
