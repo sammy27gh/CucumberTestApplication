@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="160.14" errors="0" skipped="0" tests="3" name="TestSuite">
+<testsuite failures="1" time="51.628" errors="0" skipped="0" tests="3" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_79\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="C:\Users\samuel.samuel-andoh\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2315854082273682300.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\samuel.samuel-andoh\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf859134156975276815.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_79\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\WinTask\Bin;;C:\Program Files (x86)\File Viewer Lite\lib\magick;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,7 +61,19 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="17.233" classname="pageFactoryTest.bAppTest" name="bingSearchTest1"/>
-  <testcase time="15.198" classname="pageFactoryTest.cAppTest" name="bingSearchTest2"/>
-  <testcase time="127.709" classname="pageFactoryTest.eLoginPageTest" name="parameterTestData"/>
+  <testcase time="21.015" classname="pageFactoryTest.bAppTest" name="bingSearchTest1"/>
+  <testcase time="16.018" classname="pageFactoryTest.cAppTest" name="bingSearchTest2"/>
+  <testcase time="14.595" classname="pageFactoryTest.eLoginPageTest" name="parameterTestData">
+    <failure message="The connection to the host 104.37.189.218, named instance sqlexpress failed. Error: &quot;java.net.SocketTimeoutException: Receive timed out&quot;. Verify the server and instance names and check that no firewall is blocking UDP traffic to port 1434.  For SQL Server 2005 or later, verify that the SQL Server Browser Service is running on the host." type="com.microsoft.sqlserver.jdbc.SQLServerException">com.microsoft.sqlserver.jdbc.SQLServerException: The connection to the host 104.37.189.218, named instance sqlexpress failed. Error: &quot;java.net.SocketTimeoutException: Receive timed out&quot;. Verify the server and instance names and check that no firewall is blocking UDP traffic to port 1434.  For SQL Server 2005 or later, verify that the SQL Server Browser Service is running on the host.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.getInstancePort(SQLServerConnection.java:3589)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.primaryPermissionCheck(SQLServerConnection.java:1225)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:972)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at pageFactoryTest.eLoginPageTest.parameterTestData(eLoginPageTest.java:61)
+</failure>
+  </testcase>
 </testsuite>
