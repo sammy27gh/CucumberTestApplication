@@ -50,7 +50,7 @@ public class bAppTest {
 				   public void setup1(){
 				  driver = new FirefoxDriver();
 				 
-				  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+				  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 				  Reporter.log("launch the internet browser ");
 				  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
 				  driver.get("http://www.bing.com/");
