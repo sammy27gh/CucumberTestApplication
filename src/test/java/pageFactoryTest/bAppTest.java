@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
@@ -53,7 +54,12 @@ public class bAppTest {
 				  driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 				  Reporter.log("launch the internet browser ");
 				  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
-				  driver.get("http://www.bing.com/");
+				 
+				  WebDriverWait wait = new WebDriverWait(driver, 80);// Maximum TimeOut
+				   // PageUtil.refreshObject(driver, By.linkText("Link_yu_want_to_click"));
+				  aLoginPage trials = new  aLoginPage(driver);
+				    wait.until(trials.presenceOfElementLocated());
+				   driver.get("http://www.bing.com/");
 			
 				    }
 
