@@ -51,7 +51,7 @@ public class cAppTest {
 		     
 		     driver.close();
 		     
-		     Thread.sleep(2000);
+		     Thread.sleep(14000);
 			}
 		   
 	   
