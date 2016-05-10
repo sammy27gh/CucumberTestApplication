@@ -8,6 +8,7 @@
 package pageFactoryTest;
 
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -48,8 +49,10 @@ public class bAppTest {
 	
 	@BeforeTest
 				   public void setup1(){
-				  driver = new FirefoxDriver();
-				 
+				 // driver = new FirefoxDriver();
+					File file = new File("C:\\Users\\samuel.samuel-andoh\\IEDriver\\IEDriverServer.exe");
+					System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
+					WebDriver driver = new InternetExplorerDriver();
 				  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				  Reporter.log("launch the internet browser ");
 				  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
