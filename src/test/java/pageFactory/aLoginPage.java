@@ -8,15 +8,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
-import com.google.common.base.Predicate;
 
 public class aLoginPage {
 	
@@ -46,27 +43,10 @@ public class aLoginPage {
 	@FindBy(how= How.NAME,using = "go")
 	WebElement clickSearch;
 	
-	//This find by is used to wait for time of loading 
-	@FindBy(how = How.NAME,using = "Email")
-	WebElement openweb;
 	// constructor for the class
 	public aLoginPage(WebDriver driver){
 	this.driver = driver;
 	PageFactory.initElements(driver, this);
-	
-
-	
-	
-	
-	//Find Element that waits for test to load 
-
-	}
-
-	public Predicate<WebDriver> presenceOfElementLocated() {
-		
-		openweb.click();
-		return null;
-	
 	
 	}
 
