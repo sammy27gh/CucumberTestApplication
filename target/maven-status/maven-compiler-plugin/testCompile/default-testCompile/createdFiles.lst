@@ -1,0 +1,6 @@
+pageFactory\aLoginPage.class
+pageFactoryTest\cAppTest.class
+pageFactoryTest\bAppTest.class
+pageFactoryTest\eLoginPageTest.class
+pageFactoryTest\dAppTest.class
+pageFactory\SearchResultsPage.class
