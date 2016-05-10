@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -28,18 +29,15 @@ public class dAppTest {
 	 
 	WebDriver driver;
 	  
-	@BeforeTest
-	   public void setup1(){
-	 
-	  driver = new FirefoxDriver();
-	 
-	 // driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	 
-	  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
-	  driver.get("http://www.bing.com/");
-
-	    }
-
+	public void setup1(){
+		  driver = new FirefoxDriver();
+		 
+		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		  Reporter.log("Validate Browser Opens for each Testdata ");
+		  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
+		  driver.get("http://www.bing.com/");
+	
+		    }
 
 
 	//@Test

@@ -14,6 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 public class aLoginPage {
 	
@@ -52,17 +53,21 @@ public class aLoginPage {
 
 	// this method types in and click the to login. 
 	public void login(String UName, String Password){
-		
+		Reporter.log("validate UserName ");
 		UserName.sendKeys(UName);
 		Next.click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Reporter.log("Validate the Password ");
 		Pass.sendKeys(Password);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		Reporter.log("Validate the Submit Page");
 		submit.click();
 	}
 	
-         public void searchBing(String SearchTerm){        	 
-        	 Search.sendKeys(SearchTerm);        	 
+         public void searchBing(String SearchTerm){    
+        	 Reporter.log("validate Search Field ");
+        	 Search.sendKeys(SearchTerm);   
+        	 Reporter.log("validate Search Button");
         	 clickSearch.click();
         	 
         	 

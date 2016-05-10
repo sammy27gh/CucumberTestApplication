@@ -20,6 +20,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -29,18 +30,21 @@ import pageFactory.aLoginPage;
 public class eLoginPageTest {
 	 
 	WebDriver driver;
-	  
+	 
 	@BeforeTest
-	   public void setup(){
-		
-	  driver = new FirefoxDriver();
-	 
-	 // driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	 
-	  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
-	  driver.get("http://www.bing.com/");
-
-	    }
+	public void setup1(){
+		  driver = new FirefoxDriver();
+		 
+		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		 // Reporter.getCurrentTestResult();
+		  
+		  Reporter.log("launch the internet browser ");
+		  Reporter.log("------------------------------------- ");
+		  
+		  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
+		  driver.get("http://www.bing.com/");
+	
+		    }
           
 	
     
@@ -77,21 +81,23 @@ public class eLoginPageTest {
  				
  				if (test == true ){
  					
+ 				Reporter.log( rs.getString(1) + "This Test Data is Correct ");
+				//System.out.println(rs.getString(1)+ ":  ------->     				Passed");
  				
-				System.out.println(rs.getString(1)+ ":  ------->     				Passed");
-			
  				
  				}else 
  				{
- 					System.out.println(rs.getString(1)+ ": ----->      			    failed");
- 					
+ 					Reporter.log( rs.getString(1) + "This Test Data is NOT correct ");
+ 					//System.out.println(rs.getString(1)+ ": ----->      			    failed");
+ 					//Reporter.getCurrentTestResult();
+ 			
  				}
  				
  				 Thread.sleep(4000);
 
  	 	     	driver.close();
  	 				 
- 	 	     	setup();
+ 	 	     	setup1();
  	 		
  	 	   
 		
@@ -105,7 +111,7 @@ public class eLoginPageTest {
 	
 		 // @Test(priority=2)
 			public void bingSearchTest() throws InterruptedException{
-			  setup();
+			  setup1();
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
@@ -122,7 +128,7 @@ public class eLoginPageTest {
 			//	  @Test(priority=3)
 			public void bingSearchTest1() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-					  setup();
+					  setup1();
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
@@ -139,7 +145,7 @@ public class eLoginPageTest {
 			//  @Test(priority=4)
 			public void bingSearchTest2() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-				setup();
+				setup1();
 				
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
@@ -156,7 +162,7 @@ public class eLoginPageTest {
 			 // @Test(priority=0)
 			public void bingSearchTest3() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-				setup();
+				setup1();
 				
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
