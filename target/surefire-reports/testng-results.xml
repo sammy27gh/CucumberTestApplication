@@ -11,43 +11,43 @@
       <![CDATA[Test for Books ]]>
     </line>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="230145" started-at="2016-05-10T02:43:14Z" finished-at="2016-05-10T02:47:04Z">
+  <suite name="Command line suite" duration-ms="190746" started-at="2016-05-10T04:27:09Z" finished-at="2016-05-10T04:30:20Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="230145" started-at="2016-05-10T02:43:14Z" finished-at="2016-05-10T02:47:04Z">
+    <test name="Command line test" duration-ms="190746" started-at="2016-05-10T04:27:09Z" finished-at="2016-05-10T04:30:20Z">
       <class name="pageFactoryTest.eLoginPageTest">
-        <test-method status="PASS" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@2e10b0fd]" name="parameterTestData" duration-ms="142797" started-at="2016-05-09T21:44:42Z" finished-at="2016-05-09T21:47:04Z">
+        <test-method status="PASS" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@3cff8f2c]" name="parameterTestData" duration-ms="117262" started-at="2016-05-09T23:28:23Z" finished-at="2016-05-09T23:30:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- parameterTestData -->
       </class> <!-- pageFactoryTest.eLoginPageTest -->
       <class name="pageFactoryTest.cAppTest">
-        <test-method status="PASS" signature="bingSearchTest2()[pri:0, instance:pageFactoryTest.cAppTest@1251dee1]" name="bingSearchTest2" duration-ms="26142" started-at="2016-05-09T21:44:16Z" finished-at="2016-05-09T21:44:42Z">
+        <test-method status="PASS" signature="bingSearchTest2()[pri:0, instance:pageFactoryTest.cAppTest@385017e9]" name="bingSearchTest2" duration-ms="14945" started-at="2016-05-09T23:28:08Z" finished-at="2016-05-09T23:28:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bingSearchTest2 -->
       </class> <!-- pageFactoryTest.cAppTest -->
       <class name="pageFactoryTest.bAppTest">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.bAppTest@385017e9]" name="setup1" is-config="true" duration-ms="10001" started-at="2016-05-09T21:43:14Z" finished-at="2016-05-09T21:43:24Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.bAppTest@44553ddb]" name="setup1" is-config="true" duration-ms="8961" started-at="2016-05-09T23:27:09Z" finished-at="2016-05-09T23:27:18Z">
           <reporter-output>
             <line>
               <![CDATA[launch the internet browser ]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.cAppTest@1251dee1]" name="setup1" is-config="true" duration-ms="9270" started-at="2016-05-09T21:43:24Z" finished-at="2016-05-09T21:43:34Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.cAppTest@385017e9]" name="setup1" is-config="true" duration-ms="8171" started-at="2016-05-09T23:27:18Z" finished-at="2016-05-09T23:27:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.dAppTest@3cff8f2c]" name="setup1" is-config="true" duration-ms="11360" started-at="2016-05-09T21:43:34Z" finished-at="2016-05-09T21:43:45Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.dAppTest@1251dee1]" name="setup1" is-config="true" duration-ms="13463" started-at="2016-05-09T23:27:26Z" finished-at="2016-05-09T23:27:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.eLoginPageTest@2e10b0fd]" name="setup" is-config="true" duration-ms="12078" started-at="2016-05-09T21:43:45Z" finished-at="2016-05-09T21:43:57Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.eLoginPageTest@3cff8f2c]" name="setup" is-config="true" duration-ms="9364" started-at="2016-05-09T23:27:40Z" finished-at="2016-05-09T23:27:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="bingSearchTest1()[pri:0, instance:pageFactoryTest.bAppTest@385017e9]" name="bingSearchTest1" duration-ms="18480" started-at="2016-05-09T21:43:57Z" finished-at="2016-05-09T21:44:16Z">
+        <test-method status="PASS" signature="bingSearchTest1()[pri:0, instance:pageFactoryTest.bAppTest@44553ddb]" name="bingSearchTest1" duration-ms="18568" started-at="2016-05-09T23:27:49Z" finished-at="2016-05-09T23:28:08Z">
           <reporter-output>
             <line>
               <![CDATA[launch the internet browser ]]>
