@@ -24,7 +24,7 @@ public class cAppTest {
 	 
 	WebDriver driver;
 	  
-	//@BeforeTest
+	@BeforeTest
 	public void setup1(){
 		  driver = new FirefoxDriver();
 		 
@@ -39,7 +39,7 @@ public class cAppTest {
 			  @Test(priority=0)
 			public void bingSearchTest2() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-				setup1();
+				//setup1();
 				
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");

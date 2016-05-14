@@ -46,7 +46,7 @@ public class bAppTest {
 	
 	*/
 	
-	//@BeforeTest
+                 @BeforeTest
 				   public void setup1(){
 				  driver = new FirefoxDriver();
 				 
@@ -63,7 +63,7 @@ public class bAppTest {
 					 @Test
 					public void bingSearchTest1() throws InterruptedException{
 				     // invoke the beforeTest method over here 
-						   setup1();
+						 //  setup1();
 						   
 			         Reporter.log("Test for Books ");
 					aLoginPage bingSearch = new aLoginPage(driver);

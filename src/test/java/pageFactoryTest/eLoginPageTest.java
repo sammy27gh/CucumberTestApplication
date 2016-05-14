@@ -49,7 +49,7 @@ public class eLoginPageTest {
 	
     
 
-	    //@Test
+	    @Test
 		public void parameterTestData() throws InterruptedException, ClassNotFoundException, SQLException{
 			
 		   

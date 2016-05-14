@@ -5,21 +5,31 @@
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
+      <![CDATA[Test for Books ]]>
+    </line>
+    <line>
       <![CDATA[validate Search Field ]]>
     </line>
     <line>
       <![CDATA[validate Search Button]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13107" started-at="2016-05-14T03:09:48Z" finished-at="2016-05-14T03:10:01Z">
+  <suite name="Default suite" duration-ms="12338" started-at="2016-05-14T03:59:34Z" finished-at="2016-05-14T03:59:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13107" started-at="2016-05-14T03:09:48Z" finished-at="2016-05-14T03:10:01Z">
-      <class name="pageFactoryTest.cAppTest">
-        <test-method status="PASS" signature="bingSearchTest2()[pri:0, instance:pageFactoryTest.cAppTest@6056677a]" name="bingSearchTest2" duration-ms="13082" started-at="2016-05-13T22:09:48Z" finished-at="2016-05-13T22:10:01Z">
+    <test name="Default test" duration-ms="12338" started-at="2016-05-14T03:59:34Z" finished-at="2016-05-14T03:59:47Z">
+      <class name="pageFactoryTest.bAppTest">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.bAppTest@5a4bccdd]" name="setup1" is-config="true" duration-ms="7241" started-at="2016-05-13T22:59:34Z" finished-at="2016-05-13T22:59:42Z">
           <reporter-output>
             <line>
               <![CDATA[launch the internet browser ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup1 -->
+        <test-method status="PASS" signature="bingSearchTest1()[pri:0, instance:pageFactoryTest.bAppTest@5a4bccdd]" name="bingSearchTest1" duration-ms="5050" started-at="2016-05-13T22:59:42Z" finished-at="2016-05-13T22:59:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test for Books ]]>
             </line>
             <line>
               <![CDATA[validate Search Field ]]>
@@ -28,8 +38,8 @@
               <![CDATA[validate Search Button]]>
             </line>
           </reporter-output>
-        </test-method> <!-- bingSearchTest2 -->
-      </class> <!-- pageFactoryTest.cAppTest -->
+        </test-method> <!-- bingSearchTest1 -->
+      </class> <!-- pageFactoryTest.bAppTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
