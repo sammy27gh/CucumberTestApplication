@@ -14,7 +14,7 @@
       <![CDATA[validate Search Button]]>
     </line>
     <line>
-      <![CDATA[MathThis Test Data is Correct ]]>
+      <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
     </line>
     <line>
       <![CDATA[launch the internet browser ]]>
@@ -29,7 +29,7 @@
       <![CDATA[validate Search Button]]>
     </line>
     <line>
-      <![CDATA[EnglishThis Test Data is NOT correct ]]>
+      <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
     </line>
     <line>
       <![CDATA[launch the internet browser ]]>
@@ -44,7 +44,7 @@
       <![CDATA[validate Search Button]]>
     </line>
     <line>
-      <![CDATA[ScienceThis Test Data is NOT correct ]]>
+      <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
     </line>
     <line>
       <![CDATA[launch the internet browser ]]>
@@ -59,22 +59,7 @@
       <![CDATA[validate Search Button]]>
     </line>
     <line>
-      <![CDATA[EngineeringThis Test Data is NOT correct ]]>
-    </line>
-    <line>
-      <![CDATA[launch the internet browser ]]>
-    </line>
-    <line>
-      <![CDATA[------------------------------------- ]]>
-    </line>
-    <line>
-      <![CDATA[validate Search Field ]]>
-    </line>
-    <line>
-      <![CDATA[validate Search Button]]>
-    </line>
-    <line>
-      <![CDATA[This Test Data is Correct ]]>
+      <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
     </line>
     <line>
       <![CDATA[launch the internet browser ]]>
@@ -83,12 +68,12 @@
       <![CDATA[------------------------------------- ]]>
     </line>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="119633" started-at="2016-05-10T22:38:39Z" finished-at="2016-05-10T22:40:39Z">
+  <suite name="Command line suite" duration-ms="100851" started-at="2016-05-14T02:10:00Z" finished-at="2016-05-14T02:11:41Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="119633" started-at="2016-05-10T22:38:39Z" finished-at="2016-05-10T22:40:39Z">
+    <test name="Command line test" duration-ms="100851" started-at="2016-05-14T02:10:00Z" finished-at="2016-05-14T02:11:41Z">
       <class name="pageFactoryTest.eLoginPageTest">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.eLoginPageTest@60216f75]" name="setup1" is-config="true" duration-ms="7632" started-at="2016-05-10T17:38:39Z" finished-at="2016-05-10T17:38:47Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.eLoginPageTest@1b2d813e]" name="setup1" is-config="true" duration-ms="8920" started-at="2016-05-13T21:10:00Z" finished-at="2016-05-13T21:10:09Z">
           <reporter-output>
             <line>
               <![CDATA[launch the internet browser ]]>
@@ -98,7 +83,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@60216f75]" name="parameterTestData" duration-ms="111988" started-at="2016-05-10T17:38:47Z" finished-at="2016-05-10T17:40:39Z">
+        <test-method status="PASS" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@1b2d813e]" name="parameterTestData" duration-ms="91912" started-at="2016-05-13T21:10:09Z" finished-at="2016-05-13T21:11:41Z">
           <reporter-output>
             <line>
               <![CDATA[validate Search Field ]]>
@@ -107,7 +92,7 @@
               <![CDATA[validate Search Button]]>
             </line>
             <line>
-              <![CDATA[MathThis Test Data is Correct ]]>
+              <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
             </line>
             <line>
               <![CDATA[launch the internet browser ]]>
@@ -122,7 +107,7 @@
               <![CDATA[validate Search Button]]>
             </line>
             <line>
-              <![CDATA[EnglishThis Test Data is NOT correct ]]>
+              <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
             </line>
             <line>
               <![CDATA[launch the internet browser ]]>
@@ -137,7 +122,7 @@
               <![CDATA[validate Search Button]]>
             </line>
             <line>
-              <![CDATA[ScienceThis Test Data is NOT correct ]]>
+              <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
             </line>
             <line>
               <![CDATA[launch the internet browser ]]>
@@ -152,22 +137,7 @@
               <![CDATA[validate Search Button]]>
             </line>
             <line>
-              <![CDATA[EngineeringThis Test Data is NOT correct ]]>
-            </line>
-            <line>
-              <![CDATA[launch the internet browser ]]>
-            </line>
-            <line>
-              <![CDATA[------------------------------------- ]]>
-            </line>
-            <line>
-              <![CDATA[validate Search Field ]]>
-            </line>
-            <line>
-              <![CDATA[validate Search Button]]>
-            </line>
-            <line>
-              <![CDATA[This Test Data is Correct ]]>
+              <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
             </line>
             <line>
               <![CDATA[launch the internet browser ]]>
