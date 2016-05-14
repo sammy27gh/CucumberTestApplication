@@ -5,149 +5,31 @@
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
-      <![CDATA[------------------------------------- ]]>
-    </line>
-    <line>
       <![CDATA[validate Search Field ]]>
     </line>
     <line>
       <![CDATA[validate Search Button]]>
-    </line>
-    <line>
-      <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
-    </line>
-    <line>
-      <![CDATA[launch the internet browser ]]>
-    </line>
-    <line>
-      <![CDATA[------------------------------------- ]]>
-    </line>
-    <line>
-      <![CDATA[validate Search Field ]]>
-    </line>
-    <line>
-      <![CDATA[validate Search Button]]>
-    </line>
-    <line>
-      <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
-    </line>
-    <line>
-      <![CDATA[launch the internet browser ]]>
-    </line>
-    <line>
-      <![CDATA[------------------------------------- ]]>
-    </line>
-    <line>
-      <![CDATA[validate Search Field ]]>
-    </line>
-    <line>
-      <![CDATA[validate Search Button]]>
-    </line>
-    <line>
-      <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
-    </line>
-    <line>
-      <![CDATA[launch the internet browser ]]>
-    </line>
-    <line>
-      <![CDATA[------------------------------------- ]]>
-    </line>
-    <line>
-      <![CDATA[validate Search Field ]]>
-    </line>
-    <line>
-      <![CDATA[validate Search Button]]>
-    </line>
-    <line>
-      <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
-    </line>
-    <line>
-      <![CDATA[launch the internet browser ]]>
-    </line>
-    <line>
-      <![CDATA[------------------------------------- ]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="102831" started-at="2016-05-14T01:34:08Z" finished-at="2016-05-14T01:35:50Z">
+  <suite name="Default suite" duration-ms="13107" started-at="2016-05-14T03:09:48Z" finished-at="2016-05-14T03:10:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="102831" started-at="2016-05-14T01:34:08Z" finished-at="2016-05-14T01:35:50Z">
-      <class name="pageFactoryTest.eLoginPageTest">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.eLoginPageTest@18bbe4d3]" name="setup1" is-config="true" duration-ms="8321" started-at="2016-05-13T20:34:08Z" finished-at="2016-05-13T20:34:16Z">
+    <test name="Default test" duration-ms="13107" started-at="2016-05-14T03:09:48Z" finished-at="2016-05-14T03:10:01Z">
+      <class name="pageFactoryTest.cAppTest">
+        <test-method status="PASS" signature="bingSearchTest2()[pri:0, instance:pageFactoryTest.cAppTest@6056677a]" name="bingSearchTest2" duration-ms="13082" started-at="2016-05-13T22:09:48Z" finished-at="2016-05-13T22:10:01Z">
           <reporter-output>
             <line>
               <![CDATA[launch the internet browser ]]>
             </line>
             <line>
-              <![CDATA[------------------------------------- ]]>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
             </line>
           </reporter-output>
-        </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@18bbe4d3]" name="parameterTestData" duration-ms="94484" started-at="2016-05-13T20:34:16Z" finished-at="2016-05-13T20:35:50Z">
-          <reporter-output>
-            <line>
-              <![CDATA[validate Search Field ]]>
-            </line>
-            <line>
-              <![CDATA[validate Search Button]]>
-            </line>
-            <line>
-              <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
-            </line>
-            <line>
-              <![CDATA[launch the internet browser ]]>
-            </line>
-            <line>
-              <![CDATA[------------------------------------- ]]>
-            </line>
-            <line>
-              <![CDATA[validate Search Field ]]>
-            </line>
-            <line>
-              <![CDATA[validate Search Button]]>
-            </line>
-            <line>
-              <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
-            </line>
-            <line>
-              <![CDATA[launch the internet browser ]]>
-            </line>
-            <line>
-              <![CDATA[------------------------------------- ]]>
-            </line>
-            <line>
-              <![CDATA[validate Search Field ]]>
-            </line>
-            <line>
-              <![CDATA[validate Search Button]]>
-            </line>
-            <line>
-              <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
-            </line>
-            <line>
-              <![CDATA[launch the internet browser ]]>
-            </line>
-            <line>
-              <![CDATA[------------------------------------- ]]>
-            </line>
-            <line>
-              <![CDATA[validate Search Field ]]>
-            </line>
-            <line>
-              <![CDATA[validate Search Button]]>
-            </line>
-            <line>
-              <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
-            </line>
-            <line>
-              <![CDATA[launch the internet browser ]]>
-            </line>
-            <line>
-              <![CDATA[------------------------------------- ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- parameterTestData -->
-      </class> <!-- pageFactoryTest.eLoginPageTest -->
+        </test-method> <!-- bingSearchTest2 -->
+      </class> <!-- pageFactoryTest.cAppTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

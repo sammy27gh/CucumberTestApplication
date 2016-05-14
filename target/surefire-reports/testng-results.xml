@@ -118,13 +118,43 @@
     <line>
       <![CDATA[validate Search Button]]>
     </line>
+    <line>
+      <![CDATA[kwoao@gmail.comThis Test Data is NOT correct ]]>
+    </line>
+    <line>
+      <![CDATA[launch the internet browser ]]>
+    </line>
+    <line>
+      <![CDATA[------------------------------------- ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
+    </line>
+    <line>
+      <![CDATA[illigal@gmail.comThis Test Data is NOT correct ]]>
+    </line>
+    <line>
+      <![CDATA[launch the internet browser ]]>
+    </line>
+    <line>
+      <![CDATA[------------------------------------- ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
+    </line>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="191643" started-at="2016-05-14T02:41:54Z" finished-at="2016-05-14T02:45:06Z">
+  <suite name="Command line suite" duration-ms="230332" started-at="2016-05-14T03:01:49Z" finished-at="2016-05-14T03:05:39Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="191643" started-at="2016-05-14T02:41:54Z" finished-at="2016-05-14T02:45:06Z">
+    <test name="Command line test" duration-ms="230332" started-at="2016-05-14T03:01:49Z" finished-at="2016-05-14T03:05:39Z">
       <class name="pageFactoryTest.eLoginPageTest">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.eLoginPageTest@331c9ba1]" name="setup1" is-config="true" duration-ms="8714" started-at="2016-05-13T21:41:54Z" finished-at="2016-05-13T21:42:03Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.eLoginPageTest@331c9ba1]" name="setup1" is-config="true" duration-ms="8577" started-at="2016-05-13T22:01:49Z" finished-at="2016-05-13T22:01:58Z">
           <reporter-output>
             <line>
               <![CDATA[launch the internet browser ]]>
@@ -134,14 +164,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="FAIL" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@331c9ba1]" name="parameterTestData" duration-ms="182895" started-at="2016-05-13T21:42:03Z" finished-at="2016-05-13T21:45:06Z">
+        <test-method status="FAIL" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@331c9ba1]" name="parameterTestData" duration-ms="221711" started-at="2016-05-13T22:01:58Z" finished-at="2016-05-13T22:05:39Z">
           <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
               <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'samuel-andoh', ip: '10.0.0.163', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
 Driver info: driver.version: RemoteWebDriver
-Session ID: dd2626d7-4e27-4dc8-be21-8764f94a0a6d
+Session ID: 367e0199-d218-4305-be92-7ddd47561b36
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]]]>
             </message>
             <full-stacktrace>
@@ -149,7 +179,7 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'samuel-andoh', ip: '10.0.0.163', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
 Driver info: driver.version: RemoteWebDriver
-Session ID: dd2626d7-4e27-4dc8-be21-8764f94a0a6d
+Session ID: 367e0199-d218-4305-be92-7ddd47561b36
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
@@ -189,7 +219,7 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7060 [/127.0.0.1] failed: Connection refused: connect
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7057 [/127.0.0.1] failed: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
@@ -321,6 +351,36 @@ Caused by: java.net.ConnectException: Connection refused: connect
             </line>
             <line>
               <![CDATA[twice@gmail.comThis Test Data is NOT correct ]]>
+            </line>
+            <line>
+              <![CDATA[launch the internet browser ]]>
+            </line>
+            <line>
+              <![CDATA[------------------------------------- ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
+            </line>
+            <line>
+              <![CDATA[kwoao@gmail.comThis Test Data is NOT correct ]]>
+            </line>
+            <line>
+              <![CDATA[launch the internet browser ]]>
+            </line>
+            <line>
+              <![CDATA[------------------------------------- ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
+            </line>
+            <line>
+              <![CDATA[illigal@gmail.comThis Test Data is NOT correct ]]>
             </line>
             <line>
               <![CDATA[launch the internet browser ]]>

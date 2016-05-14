@@ -60,7 +60,7 @@ public class bAppTest {
 	
 
 			  
-					 //@Test
+					 @Test
 					public void bingSearchTest1() throws InterruptedException{
 				     // invoke the beforeTest method over here 
 						   setup1();

@@ -36,7 +36,7 @@ public class cAppTest {
 		    }
 
 			
-			 // @Test(priority=0)
+			  @Test(priority=0)
 			public void bingSearchTest2() throws InterruptedException{
 		     // invoke the beforeTest method over here 
 				setup1();

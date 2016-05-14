@@ -132,13 +132,13 @@
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;samuel-andoh&apos;, ip: &apos;10.0.0.163&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
 Driver info: driver.version: RemoteWebDriver
-Session ID: dd2626d7-4e27-4dc8-be21-8764f94a0a6d
+Session ID: 367e0199-d218-4305-be92-7ddd47561b36
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
 	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:511)
 	at pageFactoryTest.eLoginPageTest.parameterTestData(eLoginPageTest.java:80)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7060 [/127.0.0.1] failed: Connection refused: connect
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7057 [/127.0.0.1] failed: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
@@ -245,7 +245,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'parameterTestData')
 data.setCell(0, 2, 'pageFactoryTest.eLoginPageTest')
-data.setCell(0, 3, 182895);
+data.setCell(0, 3, 221711);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
@@ -301,6 +301,16 @@ return data;
                 <span class="reporter-method-output">------------------------------------- </span>
                 <span class="reporter-method-output">validate Search Field </span>
                 <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">kwoao@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">launch the internet browser </span>
+                <span class="reporter-method-output">------------------------------------- </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">illigal@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">launch the internet browser </span>
+                <span class="reporter-method-output">------------------------------------- </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -327,7 +337,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">parameterTestData</span>
-                <span class="method-start">8726 ms</span>
+                <span class="method-start">8600 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
