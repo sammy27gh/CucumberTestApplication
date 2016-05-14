@@ -59,12 +59,13 @@ public class eLoginPageTest {
 			String userName = "sa";
      		String password = "Sk@456321";
 
-     		String url = "jdbc:sqlserver://104.37.189.218\\SQLEXPRESS;databaseName=Books";
+     		String url = "jdbc:sqlserver://104.37.189.218\\SQLEXPRESS;databaseName=Celebrity";
+     		
 
      		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
      		Connection conn = DriverManager.getConnection(url, userName, password);
      		Statement sta =  conn.createStatement();
-     		String Sql = "select * from Books.[dbo].[seleniumTestData]";
+     		String Sql = "select * from  Celebrity.[dbo].[Celebrity]";
      		ResultSet rs = sta.executeQuery(Sql);
      		while (rs.next()) {
      			

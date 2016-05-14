@@ -5,79 +5,145 @@
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
-      <![CDATA[MathThis Test Data is Correct ]]>
+      <![CDATA[------------------------------------- ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
+    </line>
+    <line>
+      <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
     </line>
     <line>
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
-      <![CDATA[EnglishThis Test Data is NOT correct ]]>
+      <![CDATA[------------------------------------- ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
+    </line>
+    <line>
+      <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
     </line>
     <line>
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
-      <![CDATA[ScienceThis Test Data is NOT correct ]]>
+      <![CDATA[------------------------------------- ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
+    </line>
+    <line>
+      <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
     </line>
     <line>
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
-      <![CDATA[EngineeringThis Test Data is NOT correct ]]>
+      <![CDATA[------------------------------------- ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
+    </line>
+    <line>
+      <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
     </line>
     <line>
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
-      <![CDATA[This Test Data is Correct ]]>
-    </line>
-    <line>
-      <![CDATA[launch the internet browser ]]>
+      <![CDATA[------------------------------------- ]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="116928" started-at="2016-05-10T21:01:17Z" finished-at="2016-05-10T21:03:14Z">
+  <suite name="Default suite" duration-ms="102831" started-at="2016-05-14T01:34:08Z" finished-at="2016-05-14T01:35:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="116928" started-at="2016-05-10T21:01:17Z" finished-at="2016-05-10T21:03:14Z">
+    <test name="Default test" duration-ms="102831" started-at="2016-05-14T01:34:08Z" finished-at="2016-05-14T01:35:50Z">
       <class name="pageFactoryTest.eLoginPageTest">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.eLoginPageTest@1459e0e5]" name="setup1" is-config="true" duration-ms="7163" started-at="2016-05-10T16:01:17Z" finished-at="2016-05-10T16:01:24Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.eLoginPageTest@18bbe4d3]" name="setup1" is-config="true" duration-ms="8321" started-at="2016-05-13T20:34:08Z" finished-at="2016-05-13T20:34:16Z">
           <reporter-output>
             <line>
               <![CDATA[launch the internet browser ]]>
+            </line>
+            <line>
+              <![CDATA[------------------------------------- ]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@1459e0e5]" name="parameterTestData" duration-ms="109741" started-at="2016-05-10T16:01:24Z" finished-at="2016-05-10T16:03:14Z">
+        <test-method status="PASS" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@18bbe4d3]" name="parameterTestData" duration-ms="94484" started-at="2016-05-13T20:34:16Z" finished-at="2016-05-13T20:35:50Z">
           <reporter-output>
             <line>
-              <![CDATA[MathThis Test Data is Correct ]]>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
+            </line>
+            <line>
+              <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
             </line>
             <line>
               <![CDATA[launch the internet browser ]]>
             </line>
             <line>
-              <![CDATA[EnglishThis Test Data is NOT correct ]]>
+              <![CDATA[------------------------------------- ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
+            </line>
+            <line>
+              <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
             </line>
             <line>
               <![CDATA[launch the internet browser ]]>
             </line>
             <line>
-              <![CDATA[ScienceThis Test Data is NOT correct ]]>
+              <![CDATA[------------------------------------- ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
+            </line>
+            <line>
+              <![CDATA[andoh.samuel@gmail.comThis Test Data is NOT correct ]]>
             </line>
             <line>
               <![CDATA[launch the internet browser ]]>
             </line>
             <line>
-              <![CDATA[EngineeringThis Test Data is NOT correct ]]>
+              <![CDATA[------------------------------------- ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
+            </line>
+            <line>
+              <![CDATA[sammy27gh@yahoo.comThis Test Data is NOT correct ]]>
             </line>
             <line>
               <![CDATA[launch the internet browser ]]>
             </line>
             <line>
-              <![CDATA[This Test Data is Correct ]]>
-            </line>
-            <line>
-              <![CDATA[launch the internet browser ]]>
+              <![CDATA[------------------------------------- ]]>
             </line>
           </reporter-output>
         </test-method> <!-- parameterTestData -->

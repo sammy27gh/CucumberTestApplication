@@ -5,10 +5,13 @@
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
-      <![CDATA[Validate the Bing Searvh Field]]>
+      <![CDATA[------------------------------------- ]]>
     </line>
     <line>
-      <![CDATA[Search Button]]>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
     </line>
     <line>
       <![CDATA[MathThis Test Data is Correct ]]>
@@ -17,10 +20,13 @@
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
-      <![CDATA[Validate the Bing Searvh Field]]>
+      <![CDATA[------------------------------------- ]]>
     </line>
     <line>
-      <![CDATA[Search Button]]>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
     </line>
     <line>
       <![CDATA[EnglishThis Test Data is NOT correct ]]>
@@ -29,10 +35,13 @@
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
-      <![CDATA[Validate the Bing Searvh Field]]>
+      <![CDATA[------------------------------------- ]]>
     </line>
     <line>
-      <![CDATA[Search Button]]>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
     </line>
     <line>
       <![CDATA[ScienceThis Test Data is NOT correct ]]>
@@ -41,10 +50,13 @@
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
-      <![CDATA[Validate the Bing Searvh Field]]>
+      <![CDATA[------------------------------------- ]]>
     </line>
     <line>
-      <![CDATA[Search Button]]>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
     </line>
     <line>
       <![CDATA[EngineeringThis Test Data is NOT correct ]]>
@@ -53,10 +65,13 @@
       <![CDATA[launch the internet browser ]]>
     </line>
     <line>
-      <![CDATA[Validate the Bing Searvh Field]]>
+      <![CDATA[------------------------------------- ]]>
     </line>
     <line>
-      <![CDATA[Search Button]]>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
     </line>
     <line>
       <![CDATA[This Test Data is Correct ]]>
@@ -64,26 +79,32 @@
     <line>
       <![CDATA[launch the internet browser ]]>
     </line>
+    <line>
+      <![CDATA[------------------------------------- ]]>
+    </line>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="117970" started-at="2016-05-10T21:47:43Z" finished-at="2016-05-10T21:49:41Z">
+  <suite name="Command line suite" duration-ms="119633" started-at="2016-05-10T22:38:39Z" finished-at="2016-05-10T22:40:39Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="117970" started-at="2016-05-10T21:47:43Z" finished-at="2016-05-10T21:49:41Z">
+    <test name="Command line test" duration-ms="119633" started-at="2016-05-10T22:38:39Z" finished-at="2016-05-10T22:40:39Z">
       <class name="pageFactoryTest.eLoginPageTest">
-        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.eLoginPageTest@2d9ff359]" name="setup1" is-config="true" duration-ms="7040" started-at="2016-05-10T16:47:43Z" finished-at="2016-05-10T16:47:50Z">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:pageFactoryTest.eLoginPageTest@60216f75]" name="setup1" is-config="true" duration-ms="7632" started-at="2016-05-10T17:38:39Z" finished-at="2016-05-10T17:38:47Z">
           <reporter-output>
             <line>
               <![CDATA[launch the internet browser ]]>
             </line>
+            <line>
+              <![CDATA[------------------------------------- ]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setup1 -->
-        <test-method status="PASS" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@2d9ff359]" name="parameterTestData" duration-ms="110914" started-at="2016-05-10T16:47:50Z" finished-at="2016-05-10T16:49:41Z">
+        <test-method status="PASS" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@60216f75]" name="parameterTestData" duration-ms="111988" started-at="2016-05-10T17:38:47Z" finished-at="2016-05-10T17:40:39Z">
           <reporter-output>
             <line>
-              <![CDATA[Validate the Bing Searvh Field]]>
+              <![CDATA[validate Search Field ]]>
             </line>
             <line>
-              <![CDATA[Search Button]]>
+              <![CDATA[validate Search Button]]>
             </line>
             <line>
               <![CDATA[MathThis Test Data is Correct ]]>
@@ -92,10 +113,13 @@
               <![CDATA[launch the internet browser ]]>
             </line>
             <line>
-              <![CDATA[Validate the Bing Searvh Field]]>
+              <![CDATA[------------------------------------- ]]>
             </line>
             <line>
-              <![CDATA[Search Button]]>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
             </line>
             <line>
               <![CDATA[EnglishThis Test Data is NOT correct ]]>
@@ -104,10 +128,13 @@
               <![CDATA[launch the internet browser ]]>
             </line>
             <line>
-              <![CDATA[Validate the Bing Searvh Field]]>
+              <![CDATA[------------------------------------- ]]>
             </line>
             <line>
-              <![CDATA[Search Button]]>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
             </line>
             <line>
               <![CDATA[ScienceThis Test Data is NOT correct ]]>
@@ -116,10 +143,13 @@
               <![CDATA[launch the internet browser ]]>
             </line>
             <line>
-              <![CDATA[Validate the Bing Searvh Field]]>
+              <![CDATA[------------------------------------- ]]>
             </line>
             <line>
-              <![CDATA[Search Button]]>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
             </line>
             <line>
               <![CDATA[EngineeringThis Test Data is NOT correct ]]>
@@ -128,16 +158,22 @@
               <![CDATA[launch the internet browser ]]>
             </line>
             <line>
-              <![CDATA[Validate the Bing Searvh Field]]>
+              <![CDATA[------------------------------------- ]]>
             </line>
             <line>
-              <![CDATA[Search Button]]>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
             </line>
             <line>
               <![CDATA[This Test Data is Correct ]]>
             </line>
             <line>
               <![CDATA[launch the internet browser ]]>
+            </line>
+            <line>
+              <![CDATA[------------------------------------- ]]>
             </line>
           </reporter-output>
         </test-method> <!-- parameterTestData -->
