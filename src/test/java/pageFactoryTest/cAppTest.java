@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -23,7 +24,20 @@ import pageFactory.aLoginPage;
 public class cAppTest {
 	 
 	WebDriver driver;
-	  
+	 
+	static String driverPath = "C:\\Users\\samuel.samuel-andoh\\Downloads\\";
+	
+	
+	@BeforeTest
+	public void setup() {
+		System.out.println("*******************");
+		System.out.println("launching Chrome browser");
+		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://www.bing.com/");
+	}
+	/*
 	@BeforeTest
 	public void setup1(){
 		  driver = new FirefoxDriver();
@@ -34,12 +48,14 @@ public class cAppTest {
 		  driver.get("http://www.bing.com/");
 	
 		    }
+	*/
+	
 
 			
 			  @Test(priority=0)
 			public void bingSearchTest2() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-				setup1();
+				setup();
 				
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");

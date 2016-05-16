@@ -17,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -28,22 +29,24 @@ import pageFactory.aLoginPage;
 public class dAppTest {
 	 
 	WebDriver driver;
-	  
-	public void setup1(){
-		  driver = new FirefoxDriver();
-		 
-		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		  Reporter.log("Validate Browser Opens for each Testdata ");
-		  //driver.get("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
-		  driver.get("http://www.bing.com/");
+	 
+	static String driverPath = "C:\\Users\\samuel.samuel-andoh\\Downloads\\";
 	
-		    }
-
+	
+	//@BeforeTest
+	public void setup() {
+		System.out.println("*******************");
+		System.out.println("launching IE browser");
+		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://www.bing.com/");
+	}
 
 	//@Test
 	public void parameter() throws InterruptedException, ClassNotFoundException, SQLException{
 		
-		setup1();
+		setup();
 	   
 		// put the data base method in here 
 		
@@ -75,7 +78,7 @@ public class dAppTest {
 
 	 	     	driver.close();
 	 				 
-	 	     	setup1();
+	 	     	setup();
 	 		
 	
  		}	

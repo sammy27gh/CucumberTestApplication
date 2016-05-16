@@ -17,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -31,8 +32,23 @@ public class eLoginPageTest {
 	 
 	WebDriver driver;
 	 
+	static String driverPath = "C:\\Users\\samuel.samuel-andoh\\Downloads\\";
+	
+	
 	@BeforeTest
-	public void setup1(){
+	public void setup() {
+		System.out.println("*******************");
+		System.out.println("launching Chrome browser");
+		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://www.bing.com/");
+	}
+	
+	
+	/*
+	@BeforeTest
+	public void setup(){
 		  driver = new FirefoxDriver();
 		 
 		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -46,7 +62,7 @@ public class eLoginPageTest {
 	
 		    }
           
-	
+	*/
     
 
 	    @Test
@@ -98,7 +114,7 @@ public class eLoginPageTest {
 
  	 	     	driver.close();
  	 				 
- 	 	     	setup1();
+ 	 	     	setup();
  	 		
  	 	   
 		
@@ -112,7 +128,7 @@ public class eLoginPageTest {
 	
 		 // @Test(priority=2)
 			public void bingSearchTest() throws InterruptedException{
-			  setup1();
+			  setup();
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
@@ -129,7 +145,7 @@ public class eLoginPageTest {
 			//	  @Test(priority=3)
 			public void bingSearchTest1() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-					  setup1();
+					  setup();
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
 		     //String searchFind = "driver.getPageSource().contains(Becker Books)";
@@ -146,7 +162,7 @@ public class eLoginPageTest {
 			//  @Test(priority=4)
 			public void bingSearchTest2() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-				setup1();
+				setup();
 				
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");
@@ -163,7 +179,7 @@ public class eLoginPageTest {
 			 // @Test(priority=0)
 			public void bingSearchTest3() throws InterruptedException{
 		     // invoke the beforeTest method over here 
-				setup1();
+				setup();
 				
 			aLoginPage bingSearch = new aLoginPage(driver);
 			bingSearch.searchBing("Books");

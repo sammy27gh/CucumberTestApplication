@@ -11,6 +11,7 @@ package pageFactoryTest;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
@@ -25,17 +26,19 @@ public class bAppTest {
 	
 	
 	
-	//static String driverPath = "C:\\Users\\Administrator\\Documents\\IEDriver\\";
+	static String driverPath = "C:\\Users\\samuel.samuel-andoh\\Downloads\\";
 	public WebDriver driver;
-	/*
+	
 	@BeforeTest
-	public void setUp() {
+	public void setup() {
 		System.out.println("*******************");
-		System.out.println("launching IE browser");
-		System.setProperty("webdriver.ie.driver", driverPath+"IEDriverServer.exe");
-		driver = new InternetExplorerDriver();
+		System.out.println("launching Chrome browser");
+		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.get("http://www.bing.com/");
 	}
+	/*
 	@Test
 	public void testGooglePageTitleInIEBrowser() {
 		driver.navigate().to("http://www.bing.com");
@@ -45,7 +48,7 @@ public class bAppTest {
 	}
 	
 	*/
-	
+	/*
 	//@BeforeTest
 				   public void setup1(){
 				  driver = new FirefoxDriver();
@@ -57,13 +60,13 @@ public class bAppTest {
 			
 				    }
 
-	
+	*/
 
 			  
 					 @Test
 					public void bingSearchTest1() throws InterruptedException{
 				     // invoke the beforeTest method over here 
-						   setup1();
+						   setup();
 						   
 			         Reporter.log("Test for Books ");
 					aLoginPage bingSearch = new aLoginPage(driver);
