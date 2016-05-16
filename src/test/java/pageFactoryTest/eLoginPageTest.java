@@ -99,13 +99,13 @@ public class eLoginPageTest {
  				if (test == true ){
  					
  				Reporter.log( rs.getString(1) + "This Test Data is Correct ");
-				//System.out.println(rs.getString(1)+ ":  ------->     				Passed");
+				System.out.println(rs.getString(1)+ ":  ------->     				Passed");
  				
  				
  				}else 
  				{
  					Reporter.log( rs.getString(1) + "This Test Data is NOT correct ");
- 					//System.out.println(rs.getString(1)+ ": ----->      			    failed");
+ 					System.out.println(rs.getString(1)+ ": ----->      			    failed");
  					//Reporter.getCurrentTestResult();
  			
  				}
