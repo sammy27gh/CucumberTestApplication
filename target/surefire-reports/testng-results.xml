@@ -10,58 +10,28 @@
     <line>
       <![CDATA[validate Search Field ]]>
     </line>
-    <line>
-      <![CDATA[validate Search Field ]]>
-    </line>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="36796" started-at="2016-05-16T16:00:25Z" finished-at="2016-05-16T16:01:02Z">
+  <suite name="Command line suite" duration-ms="39169" started-at="2016-06-24T22:22:34Z" finished-at="2016-06-24T22:23:13Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="36796" started-at="2016-05-16T16:00:25Z" finished-at="2016-05-16T16:01:02Z">
+    <test name="Command line test" duration-ms="39169" started-at="2016-06-24T22:22:34Z" finished-at="2016-06-24T22:23:13Z">
       <class name="pageFactoryTest.eLoginPageTest">
-        <test-method status="FAIL" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@21300853]" name="parameterTestData" duration-ms="766" started-at="2016-05-16T11:01:01Z" finished-at="2016-05-16T11:01:02Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@49da30c3]" name="parameterTestData" duration-ms="15867" started-at="2016-06-24T17:22:57Z" finished-at="2016-06-24T17:23:13Z">
+          <exception class="com.microsoft.sqlserver.jdbc.SQLServerException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=50.0.2661.102)
-  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'samuel-andoh', ip: '10.0.0.163', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
-*** Element info: {Using=name, value=q}
-Session ID: ee79a477237ced79627903738ed904a0
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir17096_8967, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=50.0.2661.102, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+              <![CDATA[The connection to the host 104.37.189.218, named instance sqlexpress failed. Error: "java.net.SocketTimeoutException: Receive timed out". Verify the server and instance names and check that no firewall is blocking UDP traffic to port 1434.  For SQL Server 2005 or later, verify that the SQL Server Browser Service is running on the host.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=50.0.2661.102)
-  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'samuel-andoh', ip: '10.0.0.163', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
-*** Element info: {Using=name, value=q}
-Session ID: ee79a477237ced79627903738ed904a0
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir17096_8967, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=50.0.2661.102, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy4.sendKeys(Unknown Source)
-	at pageFactory.aLoginPage.searchBing(aLoginPage.java:69)
-	at pageFactoryTest.eLoginPageTest.parameterTestData(eLoginPageTest.java:93)
+              <![CDATA[com.microsoft.sqlserver.jdbc.SQLServerException: The connection to the host 104.37.189.218, named instance sqlexpress failed. Error: "java.net.SocketTimeoutException: Receive timed out". Verify the server and instance names and check that no firewall is blocking UDP traffic to port 1434.  For SQL Server 2005 or later, verify that the SQL Server Browser Service is running on the host.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.getInstancePort(SQLServerConnection.java:3589)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.primaryPermissionCheck(SQLServerConnection.java:1225)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:972)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at pageFactoryTest.eLoginPageTest.parameterTestData(eLoginPageTest.java:82)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,42 +68,39 @@ Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, bro
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- com.microsoft.sqlserver.jdbc.SQLServerException -->
           <reporter-output>
-            <line>
-              <![CDATA[validate Search Field ]]>
-            </line>
           </reporter-output>
         </test-method> <!-- parameterTestData -->
       </class> <!-- pageFactoryTest.eLoginPageTest -->
       <class name="pageFactoryTest.cAppTest">
-        <test-method status="FAIL" signature="bingSearchTest2()[pri:0, instance:pageFactoryTest.cAppTest@3add750e]" name="bingSearchTest2" duration-ms="3567" started-at="2016-05-16T11:00:58Z" finished-at="2016-05-16T11:01:01Z">
+        <test-method status="FAIL" signature="bingSearchTest2()[pri:0, instance:pageFactoryTest.cAppTest@5872922a]" name="bingSearchTest2" duration-ms="3896" started-at="2016-06-24T17:22:53Z" finished-at="2016-06-24T17:22:57Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=50.0.2661.102)
+  (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 7 milliseconds
+Command duration or timeout: 14 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'samuel-andoh', ip: '10.0.0.163', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
 *** Element info: {Using=name, value=q}
-Session ID: 35375e7a25b57002e2bc6d3fa6842c7a
+Session ID: 8511f73deb1bc9494503d144e09cff32
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir10376_24254, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=50.0.2661.102, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir2480_9567, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=51.0.2704.103, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=50.0.2661.102)
+  (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 7 milliseconds
+Command duration or timeout: 14 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'samuel-andoh', ip: '10.0.0.163', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
 *** Element info: {Using=name, value=q}
-Session ID: 35375e7a25b57002e2bc6d3fa6842c7a
+Session ID: 8511f73deb1bc9494503d144e09cff32
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir10376_24254, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=50.0.2661.102, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir2480_9567, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=51.0.2704.103, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -195,45 +162,45 @@ Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, bro
         </test-method> <!-- bingSearchTest2 -->
       </class> <!-- pageFactoryTest.cAppTest -->
       <class name="pageFactoryTest.bAppTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.bAppTest@52ee4084]" name="setup" is-config="true" duration-ms="11159" started-at="2016-05-16T11:00:25Z" finished-at="2016-05-16T11:00:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.bAppTest@462938d8]" name="setup" is-config="true" duration-ms="7215" started-at="2016-06-24T17:22:34Z" finished-at="2016-06-24T17:22:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.cAppTest@3add750e]" name="setup" is-config="true" duration-ms="16675" started-at="2016-05-16T11:00:36Z" finished-at="2016-05-16T11:00:53Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.cAppTest@5872922a]" name="setup" is-config="true" duration-ms="4156" started-at="2016-06-24T17:22:41Z" finished-at="2016-06-24T17:22:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.eLoginPageTest@21300853]" name="setup" is-config="true" duration-ms="2592" started-at="2016-05-16T11:00:53Z" finished-at="2016-05-16T11:00:56Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.eLoginPageTest@49da30c3]" name="setup" is-config="true" duration-ms="3925" started-at="2016-06-24T17:22:45Z" finished-at="2016-06-24T17:22:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="bingSearchTest1()[pri:0, instance:pageFactoryTest.bAppTest@52ee4084]" name="bingSearchTest1" duration-ms="2007" started-at="2016-05-16T11:00:56Z" finished-at="2016-05-16T11:00:58Z">
+        <test-method status="FAIL" signature="bingSearchTest1()[pri:0, instance:pageFactoryTest.bAppTest@462938d8]" name="bingSearchTest1" duration-ms="3976" started-at="2016-06-24T17:22:49Z" finished-at="2016-06-24T17:22:53Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=50.0.2661.102)
+  (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 3 milliseconds
+Command duration or timeout: 12 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'samuel-andoh', ip: '10.0.0.163', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
 *** Element info: {Using=name, value=q}
-Session ID: 5e5aed517b972f1406ce4eed6fb8aa86
+Session ID: efbe1e297da038bcc9e4d10b0e474575
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir12056_10358, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=50.0.2661.102, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir14148_20170, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=51.0.2704.103, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=50.0.2661.102)
+  (Session info: chrome=51.0.2704.103)
   (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 3 milliseconds
+Command duration or timeout: 12 milliseconds
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'samuel-andoh', ip: '10.0.0.163', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.7.0_79'
 *** Element info: {Using=name, value=q}
-Session ID: 5e5aed517b972f1406ce4eed6fb8aa86
+Session ID: efbe1e297da038bcc9e4d10b0e474575
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir12056_10358, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=50.0.2661.102, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir14148_20170, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=51.0.2704.103, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
