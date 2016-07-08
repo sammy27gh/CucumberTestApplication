@@ -63,7 +63,7 @@ public class aLoginPage {
 		Reporter.log("Validate the Submit Page");
 		submit.click();
 	}
-	
+	// This method checks for the search term
          public void searchBing(String SearchTerm){    
         	 Reporter.log("validate Search Field ");
         	 Search.sendKeys(SearchTerm);   
