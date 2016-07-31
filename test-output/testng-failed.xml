@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="pageFactoryTest.dAppTest">
+      <class name="pageFactoryTest.eLoginPageTest">
         <methods>
+          <include name="parameterTestData"/>
           <include name="setup"/>
-          <include name="parameter"/>
         </methods>
-      </class> <!-- pageFactoryTest.dAppTest -->
+      </class> <!-- pageFactoryTest.eLoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

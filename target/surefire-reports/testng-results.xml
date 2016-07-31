@@ -17,12 +17,12 @@
       <![CDATA[validate Search Button]]>
     </line>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="52297" started-at="2016-06-24T22:47:34Z" finished-at="2016-06-24T22:48:26Z">
+  <suite name="Command line suite" duration-ms="53087" started-at="2016-07-08T22:36:07Z" finished-at="2016-07-08T22:37:00Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="52297" started-at="2016-06-24T22:47:34Z" finished-at="2016-06-24T22:48:26Z">
+    <test name="Command line test" duration-ms="53087" started-at="2016-07-08T22:36:07Z" finished-at="2016-07-08T22:37:00Z">
       <class name="pageFactoryTest.eLoginPageTest">
-        <test-method status="FAIL" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@722cf676]" name="parameterTestData" duration-ms="14744" started-at="2016-06-24T17:48:11Z" finished-at="2016-06-24T17:48:26Z">
+        <test-method status="FAIL" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@722cf676]" name="parameterTestData" duration-ms="14787" started-at="2016-07-08T17:36:45Z" finished-at="2016-07-08T17:37:00Z">
           <exception class="com.microsoft.sqlserver.jdbc.SQLServerException">
             <message>
               <![CDATA[The connection to the host 104.37.189.218, named instance sqlexpress failed. Error: "java.net.SocketTimeoutException: Receive timed out". Verify the server and instance names and check that no firewall is blocking UDP traffic to port 1434.  For SQL Server 2005 or later, verify that the SQL Server Browser Service is running on the host.]]>
@@ -80,7 +80,7 @@
         </test-method> <!-- parameterTestData -->
       </class> <!-- pageFactoryTest.eLoginPageTest -->
       <class name="pageFactoryTest.cAppTest">
-        <test-method status="PASS" signature="bingSearchTest2()[pri:0, instance:pageFactoryTest.cAppTest@13b77816]" name="bingSearchTest2" duration-ms="9136" started-at="2016-06-24T17:48:02Z" finished-at="2016-06-24T17:48:11Z">
+        <test-method status="PASS" signature="bingSearchTest2()[pri:0, instance:pageFactoryTest.cAppTest@13b77816]" name="bingSearchTest2" duration-ms="8619" started-at="2016-07-08T17:36:37Z" finished-at="2016-07-08T17:36:45Z">
           <reporter-output>
             <line>
               <![CDATA[validate Search Field ]]>
@@ -92,19 +92,19 @@
         </test-method> <!-- bingSearchTest2 -->
       </class> <!-- pageFactoryTest.cAppTest -->
       <class name="pageFactoryTest.bAppTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.bAppTest@717a07ac]" name="setup" is-config="true" duration-ms="5938" started-at="2016-06-24T17:47:34Z" finished-at="2016-06-24T17:47:40Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.bAppTest@717a07ac]" name="setup" is-config="true" duration-ms="6047" started-at="2016-07-08T17:36:07Z" finished-at="2016-07-08T17:36:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.cAppTest@13b77816]" name="setup" is-config="true" duration-ms="5234" started-at="2016-06-24T17:47:40Z" finished-at="2016-06-24T17:47:45Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.cAppTest@13b77816]" name="setup" is-config="true" duration-ms="5535" started-at="2016-07-08T17:36:13Z" finished-at="2016-07-08T17:36:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.eLoginPageTest@722cf676]" name="setup" is-config="true" duration-ms="4643" started-at="2016-06-24T17:47:45Z" finished-at="2016-06-24T17:47:49Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.eLoginPageTest@722cf676]" name="setup" is-config="true" duration-ms="4587" started-at="2016-07-08T17:36:19Z" finished-at="2016-07-08T17:36:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="bingSearchTest1()[pri:0, instance:pageFactoryTest.bAppTest@717a07ac]" name="bingSearchTest1" duration-ms="12544" started-at="2016-06-24T17:47:49Z" finished-at="2016-06-24T17:48:02Z">
+        <test-method status="PASS" signature="bingSearchTest1()[pri:0, instance:pageFactoryTest.bAppTest@717a07ac]" name="bingSearchTest1" duration-ms="13466" started-at="2016-07-08T17:36:23Z" finished-at="2016-07-08T17:36:37Z">
           <reporter-output>
             <line>
               <![CDATA[Test for Books ]]>
