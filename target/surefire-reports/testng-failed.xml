@@ -10,6 +10,7 @@
       </class> <!-- pageFactoryTest.cAppTest -->
       <class name="pageFactoryTest.bAppTest">
         <methods>
+          <include name="bingSearchTest1"/>
           <include name="setup"/>
         </methods>
       </class> <!-- pageFactoryTest.bAppTest -->

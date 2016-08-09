@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -99,6 +99,11 @@
                       <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
                     </span>
                     <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="pageFactoryTest.bAppTest" hash-for-method="bingSearchTest1">bingSearchTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="pageFactoryTest.eLoginPageTest" hash-for-method="parameterTestData">parameterTestData</a> <!-- method navigator-link -->
@@ -113,11 +118,6 @@
                       <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
                     </span>
                     <div class="method-list-content passed suite-Command_line_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="pageFactoryTest.bAppTest" hash-for-method="bingSearchTest1">bingSearchTest1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="pageFactoryTest.cAppTest" hash-for-method="bingSearchTest2">bingSearchTest2</a> <!-- method navigator-link -->
@@ -135,6 +135,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">pageFactoryTest.bAppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bingSearchTest1">
+                  </a> <!-- bingSearchTest1 -->
+                  <span class="method-name">bingSearchTest1</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at pageFactoryTest.bAppTest.bingSearchTest1(bAppTest.java:78)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -173,21 +192,6 @@
                   <a name="bingSearchTest2">
                   </a> <!-- bingSearchTest2 -->
                   <span class="method-name">bingSearchTest2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">pageFactoryTest.bAppTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="bingSearchTest1">
-                  </a> <!-- bingSearchTest1 -->
-                  <span class="method-name">bingSearchTest1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -248,22 +252,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'parameterTestData')
-data.setCell(0, 2, 'pageFactoryTest.eLoginPageTest')
-data.setCell(0, 3, 14787);
+data.setCell(0, 1, 'bingSearchTest2')
+data.setCell(0, 2, 'pageFactoryTest.cAppTest')
+data.setCell(0, 3, 23293);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'bingSearchTest1')
 data.setCell(1, 2, 'pageFactoryTest.bAppTest')
-data.setCell(1, 3, 13466);
+data.setCell(1, 3, 22528);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'bingSearchTest2')
-data.setCell(2, 2, 'pageFactoryTest.cAppTest')
-data.setCell(2, 3, 8619);
+data.setCell(2, 1, 'parameterTestData')
+data.setCell(2, 2, 'pageFactoryTest.eLoginPageTest')
+data.setCell(2, 3, 17024);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -275,16 +279,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">bingSearchTest1</span>
+              <span class="reporter-method-name">bingSearchTest2</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test for Books </span>
                 <span class="reporter-method-output">validate Search Field </span>
                 <span class="reporter-method-output">validate Search Button</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">bingSearchTest2</span>
+              <span class="reporter-method-name">bingSearchTest1</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test for Books </span>
                 <span class="reporter-method-output">validate Search Field </span>
                 <span class="reporter-method-output">validate Search Button</span>
               </div> <!-- reporter-method-output-div -->
@@ -314,28 +318,30 @@ return data;
               <div class="chronological-class-name">pageFactoryTest.cAppTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">6047 ms</span>
+                <span class="method-start">21652 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pageFactoryTest.eLoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">11582 ms</span>
+                <span class="method-start">38849 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pageFactoryTest.bAppTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">bingSearchTest1</span>
-                <span class="method-start">16203 ms</span>
+                <span class="method-start">54558 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pageFactoryTest.cAppTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">bingSearchTest2</span>
-                <span class="method-start">29669 ms</span>
+                <span class="method-start">77302 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -344,7 +350,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">parameterTestData</span>
-                <span class="method-start">38290 ms</span>
+                <span class="method-start">100598 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
