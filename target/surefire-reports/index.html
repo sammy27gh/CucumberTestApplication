@@ -138,6 +138,25 @@
           <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">pageFactoryTest.eLoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="parameterTestData">
+                  </a> <!-- parameterTestData -->
+                  <span class="method-name">parameterTestData</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at pageFactoryTest.eLoginPageTest.parameterTestData(eLoginPageTest.java:100)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">pageFactoryTest.bAppTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -149,33 +168,6 @@
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
 	at pageFactoryTest.bAppTest.bingSearchTest1(bAppTest.java:78)
 ... Removed 39 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-failed -->
-          <div class="suite-Command_line_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">pageFactoryTest.eLoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="parameterTestData">
-                  </a> <!-- parameterTestData -->
-                  <span class="method-name">parameterTestData</span>
-                  <div class="stack-trace">com.microsoft.sqlserver.jdbc.SQLServerException: The connection to the host 104.37.189.218, named instance sqlexpress failed. Error: &quot;java.net.SocketTimeoutException: Receive timed out&quot;. Verify the server and instance names and check that no firewall is blocking UDP traffic to port 1434.  For SQL Server 2005 or later, verify that the SQL Server Browser Service is running on the host.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.getInstancePort(SQLServerConnection.java:3589)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.primaryPermissionCheck(SQLServerConnection.java:1225)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:972)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
-	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
-	at java.sql.DriverManager.getConnection(DriverManager.java:571)
-	at java.sql.DriverManager.getConnection(DriverManager.java:215)
-	at pageFactoryTest.eLoginPageTest.parameterTestData(eLoginPageTest.java:82)
-... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -254,20 +246,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'bingSearchTest2')
 data.setCell(0, 2, 'pageFactoryTest.cAppTest')
-data.setCell(0, 3, 23293);
+data.setCell(0, 3, 14826);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'bingSearchTest1')
-data.setCell(1, 2, 'pageFactoryTest.bAppTest')
-data.setCell(1, 3, 22528);
+data.setCell(1, 1, 'parameterTestData')
+data.setCell(1, 2, 'pageFactoryTest.eLoginPageTest')
+data.setCell(1, 3, 13040);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'parameterTestData')
-data.setCell(2, 2, 'pageFactoryTest.eLoginPageTest')
-data.setCell(2, 3, 17024);
+data.setCell(2, 1, 'bingSearchTest1')
+data.setCell(2, 2, 'pageFactoryTest.bAppTest')
+data.setCell(2, 3, 12250);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -289,6 +281,13 @@ return data;
               <span class="reporter-method-name">bingSearchTest1</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Test for Books </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">parameterTestData</span>
+              <div class="reporter-method-output-div">
                 <span class="reporter-method-output">validate Search Field </span>
                 <span class="reporter-method-output">validate Search Button</span>
               </div> <!-- reporter-method-output-div -->
@@ -318,14 +317,14 @@ return data;
               <div class="chronological-class-name">pageFactoryTest.cAppTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">21652 ms</span>
+                <span class="method-start">11016 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pageFactoryTest.eLoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">38849 ms</span>
+                <span class="method-start">19576 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -334,14 +333,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">bingSearchTest1</span>
-                <span class="method-start">54558 ms</span>
+                <span class="method-start">31666 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pageFactoryTest.cAppTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">bingSearchTest2</span>
-                <span class="method-start">77302 ms</span>
+                <span class="method-start">43935 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -350,7 +349,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">parameterTestData</span>
-                <span class="method-start">100598 ms</span>
+                <span class="method-start">58763 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -93,7 +93,24 @@ public class eLoginPageTest {
  				newsTest.searchBing("Emaail Books");
  				Thread.sleep(9000);
  				
- 				boolean test = driver.getPageSource().contains(rs.getString(1));
+ 				
+ 				  boolean test = driver.getPageSource().contains("what the hell is that");
+					
+					//Assert.assertEquals(test, true);
+				     Assert.assertEquals(test, true);
+		 
+		    
+				     driver.close();
+				     
+				     Thread.sleep(2000);
+ 				
+ 				
+ 				
+ 				
+ 				
+ 				
+ 				
+ 			/**	boolean test = driver.getPageSource().contains(rs.getString(1));
  				
  				
  				if (test == true ){
@@ -114,7 +131,7 @@ public class eLoginPageTest {
  				
  				 Thread.sleep(4000);
 
- 	 	     	driver.close();
+ 	 	     	driver.close();    **/
  	 				 
  	 	     	setup();
  	 		
