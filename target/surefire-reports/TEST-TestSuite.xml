@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="2" time="40.127" errors="0" skipped="0" tests="3" name="TestSuite">
+<testsuite failures="2" time="44.829" errors="0" skipped="0" tests="3" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_79\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="C:\Users\samuel.samuel-andoh\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6094038770317240902.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\samuel.samuel-andoh\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6328252525406295928.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_79\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\WinTask\Bin;;C:\Program Files (x86)\File Viewer Lite\lib\magick;C:\Program Files (x86)\Skype\Phone\;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,16 +61,16 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="12.27" classname="pageFactoryTest.bAppTest" name="bingSearchTest1">
+  <testcase time="13.979" classname="pageFactoryTest.bAppTest" name="bingSearchTest1">
     <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:288)
 	at org.testng.Assert.assertEquals(Assert.java:298)
-	at pageFactoryTest.bAppTest.bingSearchTest1(bAppTest.java:78)
+	at pageFactoryTest.bAppTest.bingSearchTest1(bAppTest.java:80)
 </failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5087c7a8
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@416c634
 *******************
 launching Chrome browser
 *******************
@@ -80,18 +80,18 @@ launching Chrome browser
 *******************
 launching Chrome browser
 </system-out>
-    <system-err>Starting ChromeDriver 2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4) on port 23217
+    <system-err>Starting ChromeDriver 2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4) on port 5638
 Only local connections are allowed.
-Starting ChromeDriver 2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4) on port 19028
+Starting ChromeDriver 2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4) on port 9107
 Only local connections are allowed.
-Starting ChromeDriver 2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4) on port 2533
+Starting ChromeDriver 2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4) on port 11071
 Only local connections are allowed.
-Starting ChromeDriver 2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4) on port 40286
+Starting ChromeDriver 2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4) on port 48797
 Only local connections are allowed.
 </system-err>
   </testcase>
-  <testcase time="14.817" classname="pageFactoryTest.cAppTest" name="bingSearchTest2"/>
-  <testcase time="13.04" classname="pageFactoryTest.eLoginPageTest" name="parameterTestData">
+  <testcase time="18.206" classname="pageFactoryTest.cAppTest" name="bingSearchTest2"/>
+  <testcase time="12.644" classname="pageFactoryTest.eLoginPageTest" name="parameterTestData">
     <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)

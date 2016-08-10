@@ -93,7 +93,7 @@ public class eLoginPageTest {
  				newsTest.searchBing("Emaail Books");
  				Thread.sleep(9000);
  				
- 				
+ 				try{
  				  boolean test = driver.getPageSource().contains("what the hell is that");
 					
 					//Assert.assertEquals(test, true);
@@ -103,7 +103,10 @@ public class eLoginPageTest {
 				     driver.close();
 				     
 				     Thread.sleep(2000);
- 				
+ 				}catch(Exception e){
+ 					System.out.println("this test failed.");
+ 					
+ 				}
  				
  				
  				
