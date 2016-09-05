@@ -15,6 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -65,6 +66,8 @@ public class bAppTest {
 			  
 					 @Test
 					public void bingSearchTest1() throws InterruptedException{
+						 
+						
 				     // invoke the beforeTest method over here 
 						   setup();
 						   
@@ -72,24 +75,24 @@ public class bAppTest {
 					aLoginPage bingSearch = new aLoginPage(driver);
 					bingSearch.searchBing("Dentistry");
 				     //String searchFind = "driver.getPageSource().contains(Becker Books)";
-					
-					try{
 				     boolean test = driver.getPageSource().contains("what the hell is that");
 					
-					//Assert.assertEquals(test, true);
-				     Assert.assertEquals(test, true);
+				     try{
+					Assert.assertEquals(test, true);
+				    // Assert.assertEquals(test, true);
 		 
 		    
 				     driver.close();
 				     
 				     Thread.sleep(2000);
-					}catch(Exception e){
-						System.out.println("test failed");
-						
-					}
-					}
-					 
-			
+					
+				     
+				} catch(Exception e){
+						 
+					Assert.assertEquals(test, false);
+						 
+					 }
 		   
 	   
+         }
 }

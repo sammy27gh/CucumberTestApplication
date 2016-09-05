@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\samuel.samuel-andoh\AppData\Local\Temp\testng-eclipse-1826527735\testng-customsuite.xml</span>
+                    <span>C:\Users\samuel.samuel-andoh\AppData\Local\Temp\testng-eclipse-181110610\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -127,16 +127,13 @@
                   <a name="parameterTestData">
                   </a> <!-- parameterTestData -->
                   <span class="method-name">parameterTestData</span>
-                  <div class="stack-trace">com.microsoft.sqlserver.jdbc.SQLServerException: The connection to the host 104.37.189.218, named instance sqlexpress failed. Error: &quot;java.net.SocketTimeoutException: Receive timed out&quot;. Verify the server and instance names and check that no firewall is blocking UDP traffic to port 1434.  For SQL Server 2005 or later, verify that the SQL Server Browser Service is running on the host.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.getInstancePort(SQLServerConnection.java:3589)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.primaryPermissionCheck(SQLServerConnection.java:1225)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:972)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
-	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
-	at java.sql.DriverManager.getConnection(DriverManager.java:571)
-	at java.sql.DriverManager.getConnection(DriverManager.java:215)
-	at pageFactoryTest.eLoginPageTest.parameterTestData(eLoginPageTest.java:82)
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:288)
+	at org.testng.Assert.assertEquals(Assert.java:298)
+	at pageFactoryTest.eLoginPageTest.parameterTestData(eLoginPageTest.java:100)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -170,7 +167,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\samuel.samuel-andoh\AppData\Local\Temp\testng-eclipse-1826527735\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\samuel.samuel-andoh\AppData\Local\Temp\testng-eclipse-181110610\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -223,7 +220,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'parameterTestData')
 data.setCell(0, 2, 'pageFactoryTest.eLoginPageTest')
-data.setCell(0, 3, 14891);
+data.setCell(0, 3, 14151);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -239,6 +236,13 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">parameterTestData</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -263,7 +267,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">parameterTestData</span>
-                <span class="method-start">6719 ms</span>
+                <span class="method-start">6580 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

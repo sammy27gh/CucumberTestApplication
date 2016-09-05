@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
+    <line>
+      <![CDATA[validate Search Field ]]>
+    </line>
+    <line>
+      <![CDATA[validate Search Button]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21664" started-at="2016-07-08T22:38:58Z" finished-at="2016-07-08T22:39:20Z">
+  <suite name="Default suite" duration-ms="20771" started-at="2016-08-10T03:14:37Z" finished-at="2016-08-10T03:14:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21664" started-at="2016-07-08T22:38:58Z" finished-at="2016-07-08T22:39:20Z">
+    <test name="Default test" duration-ms="20771" started-at="2016-08-10T03:14:37Z" finished-at="2016-08-10T03:14:58Z">
       <class name="pageFactoryTest.eLoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.eLoginPageTest@74a7ef62]" name="setup" is-config="true" duration-ms="6686" started-at="2016-07-08T17:38:58Z" finished-at="2016-07-08T17:39:05Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:pageFactoryTest.eLoginPageTest@24e55d75]" name="setup" is-config="true" duration-ms="6538" started-at="2016-08-09T22:14:37Z" finished-at="2016-08-09T22:14:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@74a7ef62]" name="parameterTestData" duration-ms="14891" started-at="2016-07-08T17:39:05Z" finished-at="2016-07-08T17:39:20Z">
-          <exception class="com.microsoft.sqlserver.jdbc.SQLServerException">
+        <test-method status="FAIL" signature="parameterTestData()[pri:0, instance:pageFactoryTest.eLoginPageTest@24e55d75]" name="parameterTestData" duration-ms="14151" started-at="2016-08-09T22:14:44Z" finished-at="2016-08-09T22:14:58Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The connection to the host 104.37.189.218, named instance sqlexpress failed. Error: "java.net.SocketTimeoutException: Receive timed out". Verify the server and instance names and check that no firewall is blocking UDP traffic to port 1434.  For SQL Server 2005 or later, verify that the SQL Server Browser Service is running on the host.]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.microsoft.sqlserver.jdbc.SQLServerException: The connection to the host 104.37.189.218, named instance sqlexpress failed. Error: "java.net.SocketTimeoutException: Receive timed out". Verify the server and instance names and check that no firewall is blocking UDP traffic to port 1434.  For SQL Server 2005 or later, verify that the SQL Server Browser Service is running on the host.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.getInstancePort(SQLServerConnection.java:3589)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.primaryPermissionCheck(SQLServerConnection.java:1225)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:972)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
-	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
-	at java.sql.DriverManager.getConnection(DriverManager.java:571)
-	at java.sql.DriverManager.getConnection(DriverManager.java:215)
-	at pageFactoryTest.eLoginPageTest.parameterTestData(eLoginPageTest.java:82)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:288)
+	at org.testng.Assert.assertEquals(Assert.java:298)
+	at pageFactoryTest.eLoginPageTest.parameterTestData(eLoginPageTest.java:100)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,8 +56,14 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.microsoft.sqlserver.jdbc.SQLServerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[validate Search Field ]]>
+            </line>
+            <line>
+              <![CDATA[validate Search Button]]>
+            </line>
           </reporter-output>
         </test-method> <!-- parameterTestData -->
       </class> <!-- pageFactoryTest.eLoginPageTest -->

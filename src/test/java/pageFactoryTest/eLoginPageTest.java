@@ -93,48 +93,35 @@ public class eLoginPageTest {
  				newsTest.searchBing("Emaail Books");
  				Thread.sleep(9000);
  				
- 				try{
- 				  boolean test = driver.getPageSource().contains("what the hell is that");
-					
-					//Assert.assertEquals(test, true);
-				     Assert.assertEquals(test, true);
-		 
-		    
-				     driver.close();
-				     
-				     Thread.sleep(2000);
- 				}catch(Exception e){
- 					System.out.println("this test failed.");
- 					
- 				}
  				
  				
  				
  				
  				
  				
- 			/**	boolean test = driver.getPageSource().contains(rs.getString(1));
+ 				
+ 			boolean test = driver.getPageSource().contains(rs.getString(1));
  				
  				
  				if (test == true ){
  					
  				Reporter.log( rs.getString(1) + "This Test Data is Correct ");
  				System.out.println(" Passed TestData Results");
-				System.out.println(rs.getString(1)+ ":  ------->     				Passed");
+				System.out.println(rs.getString(1)+ ": \u001B31;Test has Passed!");
  				
  				
  				}else 
  				{
  					Reporter.log( rs.getString(1) + "This Test Data is NOT correct ");
  					System.out.println("Failed TestData Results");
- 					System.out.println(rs.getString(1)+ ": ----->      			    failed");
+ 					System.out.println(rs.getString(1)+ ":  \u002B31;Test has Failed!");
  					//Reporter.getCurrentTestResult();
  			
  				}
  				
  				 Thread.sleep(4000);
 
- 	 	     	driver.close();    **/
+ 	 	     	driver.close();   
  	 				 
  	 	     	setup();
  	 		

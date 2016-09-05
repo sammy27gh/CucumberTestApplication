@@ -9,17 +9,16 @@
           <include name="setup"/>
         </methods>
       </class> <!-- pageFactoryTest.bAppTest -->
-      <class name="pageFactoryTest.eLoginPageTest">
-        <methods>
-          <include name="parameterTestData"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- pageFactoryTest.eLoginPageTest -->
       <class name="pageFactoryTest.cAppTest">
         <methods>
           <include name="setup"/>
         </methods>
       </class> <!-- pageFactoryTest.cAppTest -->
+      <class name="pageFactoryTest.eLoginPageTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- pageFactoryTest.eLoginPageTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->
