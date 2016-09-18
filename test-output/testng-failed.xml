@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="pageFactoryTest.eLoginPageTest">
+      <class name="accountManagementTest.recentOrdersTest">
         <methods>
-          <include name="parameterTestData"/>
+          <include name="update_Recent_Order_CreditCardDetailsTest"/>
           <include name="setup"/>
+          <include name="LoginTest"/>
         </methods>
-      </class> <!-- pageFactoryTest.eLoginPageTest -->
+      </class> <!-- accountManagementTest.recentOrdersTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
