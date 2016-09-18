@@ -38,16 +38,7 @@ public class recentOrdersTest {
 		
 		
 	}
-	
-   /*
-   public void loginTest() throws Throwable{
-	   Thread.sleep(10000);
-      recentOrders recOrders = new recentOrders();
-      Thread.sleep(10000);
-      recOrders.login("sammy27gh@yahoo.com", "ska123456");
-        	 
-         }
-   */
+
    @Test
    public void LoginTest() throws Throwable{
 	   
@@ -66,5 +57,7 @@ public class recentOrdersTest {
 	   boolean recOrdersCreditTest= driver.getPageSource().contains("Career Services");
 		Assert.assertEquals(recOrdersCreditTest, true);
    }
+   
+   
  
 }
