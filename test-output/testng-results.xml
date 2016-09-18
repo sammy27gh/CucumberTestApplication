@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36949" started-at="2016-09-18T05:17:08Z" finished-at="2016-09-18T05:17:45Z">
+  <suite name="Default suite" duration-ms="37014" started-at="2016-09-18T13:52:06Z" finished-at="2016-09-18T13:52:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36949" started-at="2016-09-18T05:17:08Z" finished-at="2016-09-18T05:17:45Z">
+    <test name="Default test" duration-ms="37014" started-at="2016-09-18T13:52:06Z" finished-at="2016-09-18T13:52:43Z">
       <class name="accountManagementTest.recentOrdersTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:accountManagementTest.recentOrdersTest@2ab64063]" name="setup" is-config="true" duration-ms="6670" started-at="2016-09-18T00:17:08Z" finished-at="2016-09-18T00:17:15Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:accountManagementTest.recentOrdersTest@6c4eb65b]" name="setup" is-config="true" duration-ms="6706" started-at="2016-09-18T08:52:06Z" finished-at="2016-09-18T08:52:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="LoginTest()[pri:0, instance:accountManagementTest.recentOrdersTest@2ab64063]" name="LoginTest" duration-ms="30157" started-at="2016-09-18T00:17:15Z" finished-at="2016-09-18T00:17:45Z">
+        <test-method status="FAIL" signature="LoginTest()[pri:0, instance:accountManagementTest.recentOrdersTest@6c4eb65b]" name="LoginTest" duration-ms="30171" started-at="2016-09-18T08:52:12Z" finished-at="2016-09-18T08:52:43Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -54,7 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="FAIL" signature="update_Recent_Order_CreditCardDetailsTest()[pri:0, instance:accountManagementTest.recentOrdersTest@2ab64063]" name="update_Recent_Order_CreditCardDetailsTest" duration-ms="44" started-at="2016-09-18T00:17:45Z" finished-at="2016-09-18T00:17:45Z">
+        <test-method status="FAIL" signature="update_Recent_Order_CreditCardDetailsTest()[pri:0, instance:accountManagementTest.recentOrdersTest@6c4eb65b]" name="update_Recent_Order_CreditCardDetailsTest" duration-ms="42" started-at="2016-09-18T08:52:43Z" finished-at="2016-09-18T08:52:43Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
