@@ -1,22 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 41.752 sec <<< FAILURE!
-LoginTest(accountManagementTest.recentOrdersTest)  Time elapsed: 30.125 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:288)
-	at org.testng.Assert.assertEquals(Assert.java:298)
-	at accountManagementTest.recentOrdersTest.LoginTest(recentOrdersTest.java:60)
-
-update_Recent_Order_CreditCardDetailsTest(accountManagementTest.recentOrdersTest)  Time elapsed: 0.018 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:288)
-	at org.testng.Assert.assertEquals(Assert.java:298)
-	at accountManagementTest.recentOrdersTest.update_Recent_Order_CreditCardDetailsTest(recentOrdersTest.java:67)
-
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.325 sec

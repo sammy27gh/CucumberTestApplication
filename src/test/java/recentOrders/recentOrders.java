@@ -1,5 +1,5 @@
 
-package acccountManagement;
+package recentOrders;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -22,40 +22,6 @@ import cucumber.api.java.en.When;
 
 public class recentOrders {
 	
-
-	WebDriver driver= new HtmlUnitDriver();; 
-	// constructor for the class
-	public recentOrders(WebDriver driver){
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-		
-		}
-	
-	//MAIN LOGIN LOCATORS
-	@FindBy(how = How.NAME, using = "username") //finding the sign in button
-     WebElement UserName;	
-    
-	@FindBy(how = How.NAME, using = "password") //finding element by CSS
-	WebElement  Password;	
-	@FindBy(how = How.ID, using = "login-button") //finding element by XPATH
-	WebElement Login;
-	
-	
-	
-
-	
-	@Given("^Login$")
-	public  void  login(String uName,String Pass ) throws Throwable {
-    //AccoutSignIn.click();    
-    Thread.sleep(5000);
-    UserName.sendKeys(uName);
-    Thread.sleep(5000);
-    Password.sendKeys(Pass);
-    Thread.sleep(5000);
-    Login.click();
-    Thread.sleep(15000);
-	  
-	}
 
 	
 	
