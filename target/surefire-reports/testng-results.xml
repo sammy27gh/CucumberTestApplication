@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="33405" started-at="2016-09-20T07:33:55Z" finished-at="2016-09-20T07:34:29Z">
+  <suite name="Command line suite" duration-ms="32476" started-at="2016-09-20T15:41:55Z" finished-at="2016-09-20T15:42:28Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="33405" started-at="2016-09-20T07:33:55Z" finished-at="2016-09-20T07:34:29Z">
+    <test name="Command line test" duration-ms="32476" started-at="2016-09-20T15:41:55Z" finished-at="2016-09-20T15:42:28Z">
       <class name="loginTest.loginTest">
-        <test-method status="PASS" signature="app_Test()[pri:0, instance:loginTest.loginTest@6f4582b8]" name="app_Test" duration-ms="14646" started-at="2016-09-20T02:33:55Z" finished-at="2016-09-20T02:34:10Z">
+        <test-method status="PASS" signature="app_Test()[pri:0, instance:loginTest.loginTest@4e7ab839]" name="app_Test" duration-ms="14634" started-at="2016-09-20T10:41:55Z" finished-at="2016-09-20T10:42:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- app_Test -->
-        <test-method status="PASS" signature="app_gmailAccountTest()[pri:0, instance:loginTest.loginTest@6f4582b8]" name="app_gmailAccountTest" duration-ms="18714" started-at="2016-09-20T02:34:10Z" finished-at="2016-09-20T02:34:29Z">
+        <test-method status="PASS" signature="app_gmailAccountTest()[pri:0, instance:loginTest.loginTest@4e7ab839]" name="app_gmailAccountTest" duration-ms="17800" started-at="2016-09-20T10:42:10Z" finished-at="2016-09-20T10:42:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- app_gmailAccountTest -->
