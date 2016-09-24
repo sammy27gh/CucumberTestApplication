@@ -34,6 +34,7 @@ public class CreditCardTest {
 	login gmailObject=PageFactory.initElements(driver, login.class);
 	gmailObject.app_gmailAccount("sammy27gh@yahoo.com", "ska123456");
 	boolean app_gmailAccountValidate= driver.getPageSource().contains("tag");
-	Assert.assertEquals(app_gmailAccountValidate, true);
+	//Assert.assertEquals(app_gmailAccountValidate, true);
+	Assert.assertEquals(app_gmailAccountValidate,true, "the account did not have a tag.");
 	 } 
 }
