@@ -5,7 +5,7 @@
  * @author samuel
  *
  */
-package loginTest;
+package LoginSuit;
 
 
 import java.util.concurrent.TimeUnit;

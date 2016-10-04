@@ -5,7 +5,7 @@
  * @author samuel
  *
  */
-package loginTest;
+package LoginSuit;
 
 import java.io.File;
 import java.sql.Connection;
