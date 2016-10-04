@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="CreditCardTest.CreditCardTest" hash-for-method="app_gmailAccountTest">app_gmailAccountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="loginTest.bAppTest" hash-for-method="bingSearchTest1">bingSearchTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,12 +120,27 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="CreditCardTest.CreditCardTest" hash-for-method="app_Test">app_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="loginTest.loginTest" hash-for-method="app_Test">app_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="loginTest.loginTest" hash-for-method="app_gmailAccountTest">app_gmailAccountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="loginTest.cAppTest" hash-for-method="bingSearchTest2">bingSearchTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="loginTest.eLoginPageTest" hash-for-method="parameterTestData">parameterTestData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -121,6 +155,59 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">loginTest.bAppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bingSearchTest1">
+                  </a> <!-- bingSearchTest1 -->
+                  <span class="method-name">bingSearchTest1</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at loginTest.bAppTest.bingSearchTest1(bAppTest.java:60)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">CreditCardTest.CreditCardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="app_gmailAccountTest">
+                  </a> <!-- app_gmailAccountTest -->
+                  <span class="method-name">app_gmailAccountTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: the account did not have a tag. expected [true] but found [false]
+	at CreditCardTest.CreditCardTest.app_gmailAccountTest(CreditCardTest.java:39)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CreditCardTest.CreditCardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="app_Test">
+                  </a> <!-- app_Test -->
+                  <span class="method-name">app_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -143,6 +230,36 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">loginTest.cAppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bingSearchTest2">
+                  </a> <!-- bingSearchTest2 -->
+                  <span class="method-name">bingSearchTest2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">loginTest.eLoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="parameterTestData">
+                  </a> <!-- parameterTestData -->
+                  <span class="method-name">parameterTestData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
         </div> <!-- panel Command_line_suite -->
         <div panel-name="test-xml-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -156,6 +273,10 @@
     &lt;classes&gt;
       &lt;class name=&quot;CreditCardTest.CreditCardTest&quot;/&gt;
       &lt;class name=&quot;cucumber.CucumberRunnerTest&quot;/&gt;
+      &lt;class name=&quot;loginTest.bAppTest&quot;/&gt;
+      &lt;class name=&quot;loginTest.cAppTest&quot;/&gt;
+      &lt;class name=&quot;loginTest.dAppTest&quot;/&gt;
+      &lt;class name=&quot;loginTest.eLoginPageTest&quot;/&gt;
       &lt;class name=&quot;loginTest.loginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
@@ -170,7 +291,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (3 classes)</span>
+                <span class="test-name">Command line test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,20 +317,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'app_gmailAccountTest')
-data.setCell(0, 2, 'loginTest.loginTest')
-data.setCell(0, 3, 17800);
+data.setCell(0, 1, 'parameterTestData')
+data.setCell(0, 2, 'loginTest.eLoginPageTest')
+data.setCell(0, 3, 274173);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'app_Test')
-data.setCell(1, 2, 'loginTest.loginTest')
-data.setCell(1, 3, 14634);
+data.setCell(1, 1, 'app_gmailAccountTest')
+data.setCell(1, 2, 'CreditCardTest.CreditCardTest')
+data.setCell(1, 3, 17272);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'app_gmailAccountTest')
+data.setCell(2, 2, 'loginTest.loginTest')
+data.setCell(2, 3, 15142);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'app_Test')
+data.setCell(3, 2, 'CreditCardTest.CreditCardTest')
+data.setCell(3, 3, 14428);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'bingSearchTest2')
+data.setCell(4, 2, 'loginTest.cAppTest')
+data.setCell(4, 3, 14406);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'app_Test')
+data.setCell(5, 2, 'loginTest.loginTest')
+data.setCell(5, 3, 12198);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'bingSearchTest1')
+data.setCell(6, 2, 'loginTest.bAppTest')
+data.setCell(6, 3, 9267);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -220,6 +361,68 @@ return data;
             <span class="header-content">Reporter output for Command line suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">bingSearchTest2</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">parameterTestData</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">andoh.samuel@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">sammy27gh@yahoo.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">andoh.samuel@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">sammy27gh@yahoo.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">yellow@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">fellow@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">twice@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">kwoao@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">illigal@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">frank@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">andoh.samuel@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">sammy27gh@yahoo.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">andoh.samuel@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">sammy27gh@yahoo.comThis Test Data is NOT correct </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">bingSearchTest1</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test for Books </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Command_line_suite" class="panel">
@@ -235,14 +438,71 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">loginTest.bAppTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">loginTest.cAppTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7687 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">loginTest.eLoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">13023 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CreditCardTest.CreditCardTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">app_Test</span>
+                <span class="method-start">18734 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">app_gmailAccountTest</span>
+                <span class="method-start">33165 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">loginTest.bAppTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bingSearchTest1</span>
+                <span class="method-start">50448 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">loginTest.cAppTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">bingSearchTest2</span>
+                <span class="method-start">59719 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">loginTest.eLoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">parameterTestData</span>
+                <span class="method-start">74127 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">loginTest.loginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">app_Test</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">348304 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">app_gmailAccountTest</span>
-                <span class="method-start">14638 ms</span>
+                <span class="method-start">360504 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
