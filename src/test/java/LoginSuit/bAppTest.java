@@ -72,7 +72,9 @@ public class bAppTest {
 					WebDriverWait wait = new WebDriverWait(driver, 10);
 				    @SuppressWarnings("unused")
 					WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Images")));
-                   // element.click();
+                   
+				   
+				    // Code is used to remove the pop up  that came from the automation from chrome;
 				    try {
 					      
 					    
@@ -114,29 +116,21 @@ public class bAppTest {
 	   
          }
 					
-					//java.awt.event.KeyEvent
-					
+			
+	// We are going to upload a file into the application using Java'
+				
 					
 					@Test
-					public void Fileupload() throws AWTException, InterruptedException{
+					public void Fileupload() throws Throwable{
 					 
 					 
-					// Start browser
-					// WebDriver driver = new FirefoxDriver();
-					 
-					// maximize browser
-					 driver.manage().window().maximize();
-					        
-					  // Specify the file location with extension
-					 StringSelection sel = new StringSelection("C:\\Users\\samuel.samuel-andoh\\Desktop\\1.docx");
-					 
-					   // Copy to clipboard
-					 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel,null);
-					 System.out.println("selection" +sel);
-					 
-					 
-					// Open Monster.com
-					// driver.get("http://my.monsterindia.com/create_account.html");
+					/*
+					 * We are going to remove the pop up that occurs in the application
+					 * 
+					 * In this we are going to use the robot class from Java * 
+					 * 
+					 * 
+					 */
 					 try {
 					      
 						    
@@ -158,44 +152,42 @@ public class bAppTest {
 					      e.printStackTrace();
 					    }
 					     Thread.sleep(2000);
-					 
+					     
+					     
+					aLoginPage FileObject1 = new aLoginPage(driver);
 					 // This will scroll down the page 
 					   JavascriptExecutor js = (JavascriptExecutor)driver;
 					   js.executeScript("scroll(0,350)");
-					 
+
 					    // Wait for 5 seconds
 				   	 Thread.sleep(5000);
-					 
-				       	// This will click on Browse button
-					 driver.findElement(By.name("uploadFileInput")).click();
-					 
-					 
-					 
-					 System.out.println("Browse button clicked");
-					 
-					 // Create object of Robot class
-					 Robot robot = new Robot();
-					 Thread.sleep(1000);
-					      
-					  // Press Enter
-					 robot.keyPress(java.awt.event.KeyEvent.VK_ENTER);
-					 
-					// Release Enter
-					// robot.keyRelease(java.awt.event.KeyEvent.VK_ENTER);
-					 
-					  // Press CTRL+V
-					 robot.keyPress(java.awt.event.KeyEvent.VK_CONTROL);
-					 robot.keyPress(java.awt.event.KeyEvent.VK_V);
-					 
-					// Release CTRL+V
-					// robot.keyRelease(java.awt.event.KeyEvent.VK_CONTROL);
-					// robot.keyRelease(java.awt.event.KeyEvent.VK_V);
-					 Thread.sleep(1000);
-					        
-					         //Press Enter 
-					 robot.keyPress(java.awt.event.KeyEvent.VK_ENTER);
-					 robot.keyRelease(java.awt.event.KeyEvent.VK_ENTER);
-					 
+				   	FileObject1.uploadAnyFile("uploadFileInput", "C:\\Users\\samuel.samuel-andoh\\Desktop\\1.docx");
+    
+	
+	// Just want to check that i can be able to navigate back and forth.
+	                     Thread.sleep(5000);
+	aLoginPage navigationObject1 =  new aLoginPage(driver);
+	           navigationObject1.checkNavigation();
+	
+	                Thread.sleep(5000);
+					driver.navigate().back();
+					Thread.sleep(5000);										
+					driver.navigate().back();
+					Thread.sleep(5000);
+					driver.navigate().back();
+					Thread.sleep(5000);
+					
+					driver.navigate().forward();
+					Thread.sleep(5000);	
+					
+					driver.navigate().forward();
+					Thread.sleep(5000);
+					driver.navigate().forward();
+					Thread.sleep(5000);
+					
+					
+					
+					
 					}		 
 			
 					 

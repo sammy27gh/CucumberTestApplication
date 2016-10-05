@@ -1,6 +1,10 @@
 
 package login;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -8,6 +12,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,11 +20,6 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.Reporter;
-
-import cucumber.api.PendingException;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 
 public class aLoginPage {
 	
@@ -48,6 +48,18 @@ public class aLoginPage {
 	
 	@FindBy(how= How.NAME,using = "go")
 	WebElement clickSearch;
+	
+	
+	// Elements to click around the web to validate the navigate().clicks
+    @FindBy(how =  How.LINK_TEXT, using = "FREE SELENIUM WEBDRIVER TRAINING ONLINE")
+    WebElement SELENIUM;
+    
+    @FindBy(how =  How.LINK_TEXT, using = "ABOUT")
+    WebElement about;
+    
+    @FindBy(how =  How.LINK_TEXT, using = "BLOG POSTS")
+    WebElement blog;
+	
 	
 	// constructor for the class
 	public aLoginPage(WebDriver driver){
@@ -88,7 +100,66 @@ public class aLoginPage {
         	 
          }
             
-           
+       
+            
+           public void checkNavigation() throws InterruptedException{
+        	
+            SELENIUM.click();
+	        Thread.sleep(5000);
+				
+
+            about.click();
+	        Thread.sleep(5000);
+        	   
+
+            blog.click();
+	        Thread.sleep(5000);
+        	   
+           } 
+            
+            
+            
+            
+            
+            
+         
+            /*
+		   	  * We are going to upload the file into the application. 
+		   	  * 
+		   	  * */
+		       	// This will click on Browse button
+            public void uploadAnyFile(String BrowseWebProperty, String PathtoFiletoUpload ) throws Exception{
+            	//uploadFileInput
+            	
+            	  // Specify the file location with extension
+				 StringSelection sel = new StringSelection(PathtoFiletoUpload);
+				 
+				   // Copy to clipboard
+				 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel,null);
+				 System.out.println("selection" +sel);
+				 
+				 //Locate the WebElement that has the browser property.
+				 driver.findElement(By.name(BrowseWebProperty)).click();
+				 
+				 // Create object of Robot class
+				 Robot robot = new Robot();
+				 Thread.sleep(1000);
+				      
+				  // Press Enter
+				 robot.keyPress(java.awt.event.KeyEvent.VK_ENTER);
+				  // Press CTRL+V
+				 robot.keyPress(java.awt.event.KeyEvent.VK_CONTROL);
+				 robot.keyPress(java.awt.event.KeyEvent.VK_V);
+			
+				 Thread.sleep(1000);
+				        
+				         //Press Enter 
+				 robot.keyPress(java.awt.event.KeyEvent.VK_ENTER);
+				 robot.keyRelease(java.awt.event.KeyEvent.VK_ENTER);	
+            	
+            	
+            	
+            }
             
             
             // method to connect to the database 

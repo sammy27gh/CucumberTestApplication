@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="82552" started-at="2016-10-05T16:55:25Z" finished-at="2016-10-05T16:56:48Z">
+  <suite name="Default suite" duration-ms="204992" started-at="2016-10-05T19:01:48Z" finished-at="2016-10-05T19:05:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="82552" started-at="2016-10-05T16:55:25Z" finished-at="2016-10-05T16:56:48Z">
+    <test name="Default test" duration-ms="204992" started-at="2016-10-05T19:01:48Z" finished-at="2016-10-05T19:05:13Z">
       <class name="LoginSuit.bAppTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:LoginSuit.bAppTest@14c7b5e7]" name="setup" is-config="true" duration-ms="41980" started-at="2016-10-05T11:55:25Z" finished-at="2016-10-05T11:56:07Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:LoginSuit.bAppTest@35b4e829]" name="setup" is-config="true" duration-ms="25010" started-at="2016-10-05T14:01:48Z" finished-at="2016-10-05T14:02:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Fileupload()[pri:0, instance:LoginSuit.bAppTest@14c7b5e7]" name="Fileupload" duration-ms="40503" started-at="2016-10-05T11:56:07Z" finished-at="2016-10-05T11:56:48Z">
+        <test-method status="PASS" signature="Fileupload()[pri:0, instance:LoginSuit.bAppTest@35b4e829]" name="Fileupload" duration-ms="179910" started-at="2016-10-05T14:02:13Z" finished-at="2016-10-05T14:05:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fileupload -->
