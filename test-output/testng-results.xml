@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32426" started-at="2016-09-20T15:42:53Z" finished-at="2016-09-20T15:43:26Z">
+  <suite name="Default suite" duration-ms="82552" started-at="2016-10-05T16:55:25Z" finished-at="2016-10-05T16:56:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32426" started-at="2016-09-20T15:42:53Z" finished-at="2016-09-20T15:43:26Z">
-      <class name="loginTest.loginTest">
-        <test-method status="PASS" signature="app_Test()[pri:0, instance:loginTest.loginTest@5bd7a97b]" name="app_Test" duration-ms="14877" started-at="2016-09-20T10:42:53Z" finished-at="2016-09-20T10:43:08Z">
+    <test name="Default test" duration-ms="82552" started-at="2016-10-05T16:55:25Z" finished-at="2016-10-05T16:56:48Z">
+      <class name="LoginSuit.bAppTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:LoginSuit.bAppTest@14c7b5e7]" name="setup" is-config="true" duration-ms="41980" started-at="2016-10-05T11:55:25Z" finished-at="2016-10-05T11:56:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- app_Test -->
-        <test-method status="PASS" signature="app_gmailAccountTest()[pri:0, instance:loginTest.loginTest@5bd7a97b]" name="app_gmailAccountTest" duration-ms="17464" started-at="2016-09-20T10:43:08Z" finished-at="2016-09-20T10:43:26Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Fileupload()[pri:0, instance:LoginSuit.bAppTest@14c7b5e7]" name="Fileupload" duration-ms="40503" started-at="2016-10-05T11:56:07Z" finished-at="2016-10-05T11:56:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- app_gmailAccountTest -->
-      </class> <!-- loginTest.loginTest -->
+        </test-method> <!-- Fileupload -->
+      </class> <!-- LoginSuit.bAppTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
