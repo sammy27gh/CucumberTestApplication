@@ -7,11 +7,12 @@ import org.testng.annotations.Test;
 import priceLineFLight.pricelineFlightReservation;
 
 
+
 	public class PricelineFlightReservationTest {
 		WebDriver driver;
 	
    
-   @Test
+   
 	public void reservationTest1() throws Throwable{
 		
 		pricelineFlightReservation reservationObject = new pricelineFlightReservation(driver);
