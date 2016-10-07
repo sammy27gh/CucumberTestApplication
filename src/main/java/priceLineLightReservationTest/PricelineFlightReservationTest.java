@@ -11,8 +11,7 @@ import priceLineFLight.pricelineFlightReservation;
 	public class PricelineFlightReservationTest {
 		WebDriver driver;
 	
-   
-   
+      
 	public void reservationTest1() throws Throwable{
 		
 		pricelineFlightReservation reservationObject = new pricelineFlightReservation(driver);
