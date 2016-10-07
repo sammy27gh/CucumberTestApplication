@@ -62,16 +62,16 @@ public class bAppTest {
 	
 			  
 			
-					public void bingSearchTest1() throws InterruptedException{
-				    Reporter.log("Test for Books ");
+	public void bingSearchTest1() throws InterruptedException{
+	Reporter.log("Test for Books ");
 				    
 				    
-					aLoginPage bingSearch = new aLoginPage(driver);
-					bingSearch.searchBing("Dentistry");
+	 aLoginPage bingSearch = new aLoginPage(driver);
+	 bingSearch.searchBing("Dentistry");
 				     
-					WebDriverWait wait = new WebDriverWait(driver, 10);
-				    @SuppressWarnings("unused")
-					WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Images")));
+	 WebDriverWait wait = new WebDriverWait(driver, 10);
+     @SuppressWarnings("unused")
+	  WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Images")));
                    
 				   
 				    // Code is used to remove the pop up  that came from the automation from chrome;
