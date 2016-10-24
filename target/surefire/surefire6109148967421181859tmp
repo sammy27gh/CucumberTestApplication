@@ -1,5 +1,5 @@
 #surefire
-#Fri Oct 07 18:08:13 CDT 2016
+#Fri Oct 07 19:08:26 CDT 2016
 classPathUrl.61=C\:\\Users\\samuel.samuel-andoh\\.m2\\repository\\xalan\\serializer\\2.7.2\\serializer-2.7.2.jar
 classPathUrl.60=C\:\\Users\\samuel.samuel-andoh\\.m2\\repository\\xalan\\xalan\\2.7.2\\xalan-2.7.2.jar
 excludes0=**/*$*
@@ -17,7 +17,7 @@ classPathUrl.51=C\:\\Users\\samuel.samuel-andoh\\.m2\\repository\\info\\cukes\\c
 includes2=**/*TestCase.java
 classPathUrl.50=C\:\\Users\\samuel.samuel-andoh\\.m2\\repository\\info\\cukes\\cucumber-core\\1.2.4\\cucumber-core-1.2.4.jar
 includes1=**/*Test.java
-tc.6=priceLineLightReservationTest.PricelineFlightReservationTest
+tc.6=LoginSuit.PricelineFlightReservationTest
 includes0=**/Test*.java
 tc.5=LoginSuit.loginTest
 tc.4=LoginSuit.eLoginPageTest

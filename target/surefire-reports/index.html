@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 4 failed,   2 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,22 +101,12 @@
                     <div class="method-list-content failed suite-Command_line_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="LoginSuit.bAppTest" hash-for-method="Fileupload">Fileupload</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="LoginSuit.cAppTest" hash-for-method="bingSearchTest2">bingSearchTest2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="LoginSuit.eLoginPageTest" hash-for-method="parameterTestData">parameterTestData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="priceLineLightReservationTest.PricelineFlightReservationTest" hash-for-method="reservationTest1">reservationTest1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="LoginSuit.PricelineFlightReservationTest" hash-for-method="reservationTest1">reservationTest1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Command_line_suite -->
@@ -130,12 +120,22 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="LoginSuit.bAppTest" hash-for-method="Fileupload">Fileupload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="LoginSuit.loginTest" hash-for-method="app_Test">app_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="LoginSuit.loginTest" hash-for-method="app_gmailAccountTest">app_gmailAccountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="LoginSuit.cAppTest" hash-for-method="bingSearchTest2">bingSearchTest2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -153,31 +153,21 @@
           <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">LoginSuit.cAppTest</span>
+              <span class="class-name">LoginSuit.PricelineFlightReservationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bingSearchTest2">
-                  </a> <!-- bingSearchTest2 -->
-                  <span class="method-name">bingSearchTest2</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=53.0.2785.143)
-  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 14 milliseconds
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;samuel-andoh&apos;, ip: &apos;192.168.235.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
-Session ID: 37330db9bf745393a7cfc8db5ce21ba5
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir6636_17838, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=53.0.2785.143, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
-	at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:511)
-	at LoginSuit.cAppTest.bingSearchTest2(cAppTest.java:66)
-... Removed 38 stack frames
+                  <a name="reservationTest1">
+                  </a> <!-- reservationTest1 -->
+                  <span class="method-name">reservationTest1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at login.pricelineFlightReservation.BookingInformation1(pricelineFlightReservation.java:127)
+	at LoginSuit.PricelineFlightReservationTest.reservationTest1(PricelineFlightReservationTest.java:24)
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -194,16 +184,17 @@ Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, bro
                   <a name="parameterTestData">
                   </a> <!-- parameterTestData -->
                   <span class="method-name">parameterTestData</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=53.0.2785.143)
   (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.02 seconds
+Command duration or timeout: 11 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;samuel-andoh&apos;, ip: &apos;192.168.235.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
 *** Element info: {Using=name, value=q}
-Session ID: cdd214d69587c01815c0c1fef68e7409
+Session ID: 8b2d5a5c6084a0b4ee0682e99cf4324a
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir1072_17210, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=53.0.2785.143, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir2480_32632, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=53.0.2785.143, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
@@ -216,61 +207,6 @@ Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, bro
 	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
 	at login.aLoginPage.searchBing(aLoginPage.java:86)
 	at LoginSuit.eLoginPageTest.parameterTestData(eLoginPageTest.java:95)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-failed -->
-          <div class="suite-Command_line_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">priceLineLightReservationTest.PricelineFlightReservationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="reservationTest1">
-                  </a> <!-- reservationTest1 -->
-                  <span class="method-name">reservationTest1</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
-	at priceLineFLight.pricelineFlightReservation.BookingInformation(pricelineFlightReservation.java:141)
-	at priceLineLightReservationTest.PricelineFlightReservationTest.reservationTest1(PricelineFlightReservationTest.java:24)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-failed -->
-          <div class="suite-Command_line_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">LoginSuit.bAppTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Fileupload">
-                  </a> <!-- Fileupload -->
-                  <span class="method-name">Fileupload</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=53.0.2785.143)
-  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.01 seconds
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;samuel-andoh&apos;, ip: &apos;192.168.235.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
-Session ID: 9548e64768680ce212a936f5a6eccf95
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\SAMUEL~1.SAM\AppData\Local\Temp\scoped_dir15740_27437, chromedriverVersion=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4)}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=53.0.2785.143, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:961)
-	at LoginSuit.bAppTest.Fileupload(bAppTest.java:173)
 ... Removed 38 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -299,6 +235,36 @@ Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, bro
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">LoginSuit.cAppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bingSearchTest2">
+                  </a> <!-- bingSearchTest2 -->
+                  <span class="method-name">bingSearchTest2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">LoginSuit.bAppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fileupload">
+                  </a> <!-- Fileupload -->
+                  <span class="method-name">Fileupload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
         </div> <!-- panel Command_line_suite -->
         <div panel-name="test-xml-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -316,7 +282,7 @@ Capabilities [{platform=WIN8_1, acceptSslCerts=true, javascriptEnabled=true, bro
       &lt;class name=&quot;LoginSuit.dAppTest&quot;/&gt;
       &lt;class name=&quot;LoginSuit.eLoginPageTest&quot;/&gt;
       &lt;class name=&quot;LoginSuit.loginTest&quot;/&gt;
-      &lt;class name=&quot;priceLineLightReservationTest.PricelineFlightReservationTest&quot;/&gt;
+      &lt;class name=&quot;LoginSuit.PricelineFlightReservationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
 &lt;/suite&gt; &lt;!-- Command line suite --&gt;
@@ -360,32 +326,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Fileupload')
 data.setCell(0, 2, 'LoginSuit.bAppTest')
-data.setCell(0, 3, 93434);
+data.setCell(0, 3, 167708);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'reservationTest1')
-data.setCell(1, 2, 'priceLineLightReservationTest.PricelineFlightReservationTest')
-data.setCell(1, 3, 21535);
+data.setCell(1, 1, 'parameterTestData')
+data.setCell(1, 2, 'LoginSuit.eLoginPageTest')
+data.setCell(1, 3, 139829);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'app_gmailAccountTest')
-data.setCell(2, 2, 'LoginSuit.loginTest')
-data.setCell(2, 3, 18678);
+data.setCell(2, 1, 'reservationTest1')
+data.setCell(2, 2, 'LoginSuit.PricelineFlightReservationTest')
+data.setCell(2, 3, 20297);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'app_Test')
+data.setCell(3, 1, 'app_gmailAccountTest')
 data.setCell(3, 2, 'LoginSuit.loginTest')
-data.setCell(3, 3, 13507);
+data.setCell(3, 3, 17211);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'bingSearchTest2')
-data.setCell(4, 2, 'LoginSuit.cAppTest')
-data.setCell(4, 3, 6294);
+data.setCell(4, 1, 'app_Test')
+data.setCell(4, 2, 'LoginSuit.loginTest')
+data.setCell(4, 3, 12984);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'parameterTestData')
-data.setCell(5, 2, 'LoginSuit.eLoginPageTest')
-data.setCell(5, 3, 5642);
+data.setCell(5, 1, 'bingSearchTest2')
+data.setCell(5, 2, 'LoginSuit.cAppTest')
+data.setCell(5, 3, 9950);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -406,6 +372,27 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">parameterTestData</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">andoh.samuel@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">sammy27gh@yahoo.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">andoh.samuel@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">sammy27gh@yahoo.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">yellow@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">fellow@gmail.comThis Test Data is NOT correct </span>
+                <span class="reporter-method-output">validate Search Field </span>
+                <span class="reporter-method-output">validate Search Button</span>
+                <span class="reporter-method-output">twice@gmail.comThis Test Data is NOT correct </span>
                 <span class="reporter-method-output">validate Search Field </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -434,41 +421,37 @@ return data;
               <div class="chronological-class-name">LoginSuit.cAppTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">27965 ms</span>
+                <span class="method-start">33215 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">LoginSuit.eLoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">35860 ms</span>
+                <span class="method-start">38292 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">priceLineLightReservationTest.PricelineFlightReservationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">LoginSuit.PricelineFlightReservationTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">reservationTest1</span>
-                <span class="method-start">45943 ms</span>
+                <span class="method-start">47620 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">LoginSuit.bAppTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">Fileupload</span>
-                <span class="method-start">67488 ms</span>
+                <span class="method-start">67926 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">LoginSuit.cAppTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">bingSearchTest2</span>
-                <span class="method-start">160941 ms</span>
+                <span class="method-start">235637 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -477,18 +460,18 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">parameterTestData</span>
-                <span class="method-start">167256 ms</span>
+                <span class="method-start">245589 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">LoginSuit.loginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">app_Test</span>
-                <span class="method-start">172910 ms</span>
+                <span class="method-start">385448 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">app_gmailAccountTest</span>
-                <span class="method-start">186419 ms</span>
+                <span class="method-start">398440 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
