@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author samuel
- *
- */
-package rest;
